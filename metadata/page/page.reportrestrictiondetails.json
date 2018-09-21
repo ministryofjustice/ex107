@@ -1,0 +1,33 @@
+{
+  "_id": "page.reportrestrictiondetails",
+  "_type": "page.form",
+  "components": [
+    {
+      "_id": "page.reportrestrictiondetails--fileupload",
+      "_type": "fileupload",
+      "hint": "If you have an order from a judge about a reporting restriction, attach it here",
+      "label": "Attach court order",
+      "name": "reportingorder",
+      "validation": {
+        "required": false
+      }
+    },
+    {
+      "_id": "page.reportrestrictiondetails--textarea",
+      "_type": "textarea",
+      "hint": "If you have details about the reporting restriction, enter them here",
+      "label": "Reporting restriction details",
+      "name": "reportrestrictiondetails",
+      "validation": {
+        "required": false
+      }
+    }
+  ],
+  "heading": "Enter details of the reporting restriction",
+  "show": {
+    "identifier": "reportrestriction",
+    "operator": "is",
+    "value": "yes"
+  },
+  "url": "details"
+}

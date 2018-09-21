@@ -1,0 +1,13 @@
+{
+  "_id": "page.sentencingremarks",
+  "_isa": "page.part",
+  "_type": "page.form",
+  "heading": "Enter details about the sentencing remarks",
+  "model": "sentencingremarks_details",
+  "show": {
+    "identifier": "sentenceremarks",
+    "operator": "is",
+    "value": "yes"
+  },
+  "url": "sentencing-remarks"
+}

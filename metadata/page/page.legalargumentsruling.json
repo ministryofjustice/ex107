@@ -1,0 +1,13 @@
+{
+  "_id": "page.legalargumentsruling",
+  "_isa": "page.part",
+  "_type": "page.form",
+  "heading": "Enter details about the legal arguments and ruling",
+  "model": "legalargumentsruling_details",
+  "show": {
+    "identifier": "arguments",
+    "operator": "is",
+    "value": "yes"
+  },
+  "url": "legalargumentsruling"
+}

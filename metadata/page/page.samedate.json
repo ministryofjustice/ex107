@@ -1,0 +1,43 @@
+{
+  "_id": "page.samedate",
+  "_type": "page.form",
+  "body": "You've asked for:\r\n\r\n{openclosesubs, select, yes{- Counsels’ opening or closing submissions} other{}}\r\n{evidence, select, yes{- Evidence} other{}}\r\n{judgment, select, yes{- Judgment} other{}}\r\n{afterjudgment, select, yes{- Proceedings after judgment} other{}}\r\n{prosopen, select, yes{- Prosecution opening of the facts} other{}}\r\n{mitigation, select, yes{- Mitigation} other{}}\r\n{sumup, select, yes{- Judge’s summing up} other{}}\r\n{sentenceremarks, select, yes{- Sentencing remarks} other{}}\r\n{sentencehearing, select, yes{- Sentencing hearing} other{}}\r\n{afterverdict, select, yes{- Proceedings after verdict} other{}}\r\n{openremarks, select, yes{- Opening remarks} other{}}\r\n{otherpart, select, otherpart{- Other} other{}}",
+  "components": [
+    {
+      "_id": "page.samedate--radios",
+      "_type": "radios",
+      "items": [
+        {
+          "_id": "page.samedate--radios--yes",
+          "_type": "radio",
+          "conditionalComponent": {
+            "_id": "page.samedate--radios--yes--date",
+            "_type": "date",
+            "hint": "For example, 31 3 1980",
+            "label": "Enter the hearing date",
+            "name": "hearingdate"
+          },
+          "label": "Yes",
+          "value": "yes"
+        },
+        {
+          "_id": "page.samedate--radios--no",
+          "_type": "radio",
+          "label": "No",
+          "value": "no"
+        },
+        {
+          "_id": "page.samedate--radios--dn",
+          "_type": "radio",
+          "label": "I do not know",
+          "value": "dn"
+        }
+      ],
+      "labelhide": true,
+      "legend": "Were all the parts heard on the same date?",
+      "name": "samedate"
+    }
+  ],
+  "heading": "Were all the parts heard on the same date?",
+  "url": "same-date"
+}

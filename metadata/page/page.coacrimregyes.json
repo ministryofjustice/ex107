@@ -1,0 +1,68 @@
+{
+  "_id": "page.coacrimregyes",
+  "_type": "page.form",
+  "components": [
+    {
+      "_id": "page.coacrimregyes--content1",
+      "_type": "content",
+      "html": "Before filling in the rest of the application, contact the company to check:\r\n\r\n- if they can do the transcript by the time you need it\r\n- how much they charge\r\n\r\nCompany | Contact details\r\n----|----\r\nAuscript | Auscript website\r\nEpiq | Epiq website\r\nMarten Walsh Cherer | Marten Walsh Cherer  website\r\nOpus 2 | Opus 2 website\r\nThe Transcription Agency | The Transcription Agency website\r\nUbiquis | Ubiquis website\r\n\r\n\r\nYou can pay more for them to do the work more quickly. The choices are:\r\n\r\n- overnight (within 24 hours)\r\n- within 48 hours\r\n- within 7 working days\r\n- within 3 working days\r\n- within 12 working days"
+    },
+    {
+      "_id": "page.coacrimregyes--warning",
+      "_type": "warning",
+      "html": "The time begins when the company starts the work - not when you submit your application.",
+      "iconFallbackText": "warning"
+    },
+    {
+      "_id": "page.coacrimregyes--radios",
+      "_type": "radios",
+      "items": [
+        {
+          "_id": "page.coacrimregyes--radios--auscript",
+          "_type": "radio",
+          "label": "Auscript",
+          "value": "auscript"
+        },
+        {
+          "_id": "page.coacrimregyes--radios--epiq",
+          "_type": "radio",
+          "label": "Epiq",
+          "value": "epiq"
+        },
+        {
+          "_id": "page.coacrimregyes--radios--mwc",
+          "_type": "radio",
+          "label": "Marten Walsh Cherer",
+          "value": "mwc"
+        },
+        {
+          "_id": "page.coacrimregyes--radios--opus2",
+          "_type": "radio",
+          "label": "Opus 2",
+          "value": "opus2"
+        },
+        {
+          "_id": "page.coacrimregyes--radios--tta",
+          "_type": "radio",
+          "label": "The Transcription Agency",
+          "value": "tta"
+        },
+        {
+          "_id": "page.coacrimregyes--radios--ubiquis",
+          "_type": "radio",
+          "label": "Ubiquis",
+          "value": "ubiquis"
+        }
+      ],
+      "legend": "Choose a company",
+      "name": "coacrimregionaltc"
+    }
+  ],
+  "heading": "Choose a transcription company",
+  "show": {
+    "identifier": "coacrimregional",
+    "operator": "is",
+    "value": "yes"
+  },
+  "url": "choose-company"
+}

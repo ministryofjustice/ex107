@@ -1,0 +1,52 @@
+{
+  "_id": "page.nameofcourt",
+  "_type": "page.form",
+  "components": [
+    {
+      "_id": "page.nameofcourt--text",
+      "_type": "text",
+      "label": "The specific court or tribunal where the hearing took place (for example, Liverpool Civil and Family Court)",
+      "name": "nameofcourt"
+    },
+    {
+      "_id": "page.nameofcourt--textarea",
+      "_type": "textarea",
+      "hint": "For example, if the case started at one court but the hearing you want transcribed was held at another court, please give details",
+      "label": "Additional details",
+      "name": "nameofcourtdetails",
+      "validation": {
+        "required": false
+      }
+    }
+  ],
+  "heading": "Enter the name of the court",
+  "show": {
+    "conditionsType": "exactly",
+    "exactly": [
+      {
+        "identifier": "area-of-law",
+        "negated": true,
+        "operator": "is",
+        "value": "criminal"
+      },
+      {
+        "conditionsType": "exactly",
+        "exactly": [
+          {
+            "identifier": "civil-court-type",
+            "negated": true,
+            "operator": "is",
+            "value": "admincourt"
+          },
+          {
+            "identifier": "civil-court-type",
+            "negated": true,
+            "operator": "is",
+            "value": "coacivil"
+          }
+        ]
+      }
+    ]
+  },
+  "url": "court-name"
+}

@@ -1,0 +1,97 @@
+{
+  "_id": "page.how-quickly",
+  "_type": "page.form",
+  "body": "The time limits begin after the court approves your application and the transcription company starts the work.",
+  "components": [
+    {
+      "_id": "page.how-quickly--radios.howquicklycivilfamtrib",
+      "_type": "radios",
+      "items": [
+        {
+          "_id": "page.how-quickly--radios.howquicklycivilfamtrib--radio.48hours",
+          "_type": "radio",
+          "label": "Within 48 hours",
+          "value": "48hours"
+        },
+        {
+          "_id": "page.how-quickly--radios.howquicklycivilfamtrib--radio.12days",
+          "_type": "radio",
+          "label": "Within 12 working days",
+          "value": "12days"
+        }
+      ],
+      "legend": "Select a time limit",
+      "name": "howquicklycivilfamtrib",
+      "show": {
+        "identifier": "area-of-law",
+        "negated": true,
+        "operator": "is",
+        "value": "criminal"
+      }
+    },
+    {
+      "_id": "page.how-quickly--radios.timelimitcrim",
+      "_type": "radios",
+      "items": [
+        {
+          "_id": "page.how-quickly--radios.timelimitcrim--radio.24hours",
+          "_type": "radio",
+          "label": "Overnight (within 24 hours)",
+          "value": "24hours"
+        },
+        {
+          "_id": "page.how-quickly--radios.timelimitcrim--radio.48hours",
+          "_type": "radio",
+          "label": "Within 48 hours",
+          "value": "48hours"
+        },
+        {
+          "_id": "page.how-quickly--radios.timelimitcrim--radio.3days",
+          "_type": "radio",
+          "label": "Within 3 working days",
+          "value": "3days"
+        },
+        {
+          "_id": "page.how-quickly--radios.timelimitcrim--radio.7days",
+          "_type": "radio",
+          "label": "Within 7 working days",
+          "value": "7days"
+        },
+        {
+          "_id": "page.how-quickly--radios.timelimitcrim--radio.12days",
+          "_type": "radio",
+          "label": "Within 12 working days",
+          "value": "12days"
+        }
+      ],
+      "legend": "Select a time limit",
+      "name": "howquicklycriminal",
+      "show": {
+        "identifier": "area-of-law",
+        "operator": "is",
+        "value": "criminal"
+      }
+    },
+    {
+      "_id": "page.how-quickly--date.urgentdate",
+      "_type": "date",
+      "hint": "For example, 31 3 1980",
+      "label": "If this request is urgent, when do you need the transcript by?",
+      "name": "urgentdate",
+      "validation": {
+        "required": false
+      }
+    }
+  ],
+  "enableSteps": true,
+  "heading": "How quickly do you need the transcript?",
+  "sectionHeading": "Paying for your transcript",
+  "steps": [
+    "page.your-details",
+    "page.contact-method",
+    "page.transcript-method",
+    "page.purchase-order",
+    "page.splitting-cost"
+  ],
+  "url": "how-quickly"
+}

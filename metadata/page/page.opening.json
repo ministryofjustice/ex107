@@ -1,0 +1,13 @@
+{
+  "_id": "page.opening",
+  "_isa": "page.part",
+  "_type": "page.form",
+  "heading": "Enter details about the counsels’ opening or closing submission",
+  "model": "opening_details",
+  "show": {
+    "identifier": "openclosesubs",
+    "operator": "is",
+    "value": "yes"
+  },
+  "url": "opening"
+}

@@ -1,0 +1,126 @@
+{
+  "_id": "page.partscrim",
+  "_type": "page.singlequestion",
+  "components": [
+    {
+      "_id": "page.partscrim--checkboxes",
+      "_type": "checkboxes",
+      "items": [
+        {
+          "_id": "page.partscrim--checkboxes--prosopen",
+          "_type": "checkbox",
+          "label": "Prosecution opening of the facts",
+          "name": "prosopen",
+          "value": "yes"
+        },
+        {
+          "_id": "page.partscrim--checkboxes--mitigation",
+          "_type": "checkbox",
+          "label": "Mitigation",
+          "name": "mitigation",
+          "value": "yes"
+        },
+        {
+          "_id": "page.partscrim--checkboxes--sumup",
+          "_type": "checkbox",
+          "label": "Judge’s summing up",
+          "name": "sumup",
+          "value": "yes"
+        },
+        {
+          "_id": "page.partscrim--checkboxes--sentenceremarks",
+          "_type": "checkbox",
+          "label": "Sentencing remarks",
+          "name": "sentenceremarks",
+          "value": "yes"
+        },
+        {
+          "_id": "page.partscrim--checkboxes--sentencehearing",
+          "_type": "checkbox",
+          "label": "Sentencing hearing",
+          "name": "sentencehearing",
+          "value": "yes"
+        },
+        {
+          "_id": "page.partscrim--checkboxes--afterverdict",
+          "_type": "checkbox",
+          "label": "Proceedings after verdict",
+          "name": "afterverdict",
+          "value": "yes"
+        },
+        {
+          "_id": "page.partscrim--checkboxes--evidence",
+          "_type": "checkbox",
+          "label": "Evidence",
+          "name": "evidence",
+          "value": "yes"
+        },
+        {
+          "_id": "page.partscrim--checkboxes--openremarks",
+          "_type": "checkbox",
+          "label": "Counsels’ opening/closing remarks",
+          "name": "openremarks",
+          "value": "yes"
+        },
+        {
+          "_id": "page.partscrim--checkboxes--arguments",
+          "_type": "checkbox",
+          "label": "Legal arguments and ruling",
+          "name": "arguments",
+          "value": "yes"
+        },
+        {
+          "_id": "page.partscrim--checkboxes--confiscation",
+          "_type": "checkbox",
+          "label": "Confiscation ruling",
+          "name": "confiscation",
+          "value": "yes"
+        },
+        {
+          "_id": "page.partscrim--checkboxes--other",
+          "_type": "checkbox",
+          "conditionalComponent": {
+            "_id": "page.partscrim--checkboxes--other--text",
+            "_type": "text",
+            "label": "Enter the part of the hearing you want transcribed",
+            "name": "other-details"
+          },
+          "label": "Other",
+          "name": "other",
+          "value": "yes"
+        }
+      ],
+      "legend": "Select the parts of the hearing you want transcribed",
+      "show": {
+        "all": [
+          {
+            "conditionsType": "exactly",
+            "exactly": [
+              {
+                "identifier": "area-of-law",
+                "operator": "is",
+                "value": "criminal"
+              },
+              {
+                "identifier": "area-of-law",
+                "operator": "is",
+                "value": "family"
+              },
+              {
+                "identifier": "area-of-law",
+                "operator": "is",
+                "value": "tribunal"
+              }
+            ]
+          },
+          {
+            "identifier": "wholeorpart",
+            "operator": "is",
+            "value": "partshearing"
+          }
+        ]
+      }
+    }
+  ],
+  "url": "parts-criminal"
+}

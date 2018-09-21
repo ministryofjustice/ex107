@@ -1,0 +1,27 @@
+{
+  "_id": "page.start",
+  "_type": "page.start",
+  "body": "Use this form to ask for a transcript of:  \r\n\r\n* the whole hearing in a court or tribunal\r\n* specific parts of a hearing (for example, the judgment or evidence from a particular witness)\r\n\r\nIf you need more than one transcript (for example, from different cases) you’ll need to make a separate application for each case.  \r\n\r\nThis form is the digital version of the [EX107 form](https://www.gov.uk/government/publications/order-a-transcript-of-court-or-tribunal-proceedings-form-ex107).",
+  "extraComponents": [
+    {
+      "_id": "page.start--details",
+      "_type": "details",
+      "html": "It should take about 20 minutes to apply. It may take longer if you want a transcript of several parts of a hearing.\r\n\r\nIn some cases, you may need to choose from a list of transcription companies. You should:\r\n\r\n* answer the first few questions to find out which companies you can choose from\r\n* contact the company to check it can do the work\r\n* select the company and fill in the rest of the application\r\n\r\nIf other people ask for the same transcript as you before your order is completed, the transcription company will split the cost equally between you.",
+      "summary": "First time using this service?"
+    }
+  ],
+  "heading": "Apply online for a transcript of a court or tribunal hearing",
+  "steps": [
+    "page.areaoflaw",
+    "page.criminalcourt",
+    "page.civilcourt",
+    "page.famcivtribchoosetc",
+    "page.coacivil",
+    "page.caserefno",
+    "page.wholeorpartcivfamtrib",
+    "page.how-quickly",
+    "page.summary",
+    "page.confirmation"
+  ],
+  "url": "/"
+}

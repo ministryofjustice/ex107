@@ -1,0 +1,7 @@
+{
+  "_id": "details.part",
+  "_type": "textarea",
+  "hint": "For example, approximate start and end times, or if you only want a specific part",
+  "label": "Details",
+  "name": "details"
+}

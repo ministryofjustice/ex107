@@ -1,0 +1,33 @@
+{
+  "_id": "page.welsh",
+  "_type": "page.singlequestion",
+  "components": [
+    {
+      "_id": "page.welsh--radios",
+      "_type": "radios",
+      "items": [
+        {
+          "_id": "page.welsh--radios--yes",
+          "_type": "radio",
+          "label": "Yes",
+          "value": "yes"
+        },
+        {
+          "_id": "page.welsh--radios--no",
+          "_type": "radio",
+          "label": "No",
+          "value": "no"
+        },
+        {
+          "_id": "page.welsh--radios--na",
+          "_type": "radio",
+          "label": "Does not apply (the hearing was not held in Welsh)",
+          "value": "na"
+        }
+      ],
+      "legend": "If the hearing was held in Welsh, do you need an English translation?",
+      "name": "welshtranslation"
+    }
+  ],
+  "url": "welsh-translation"
+}

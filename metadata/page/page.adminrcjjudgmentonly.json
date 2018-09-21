@@ -1,0 +1,48 @@
+{
+  "_id": "page.adminrcjjudgmentonly",
+  "_type": "page.content",
+  "body": "Before filling in the rest of the application, contact the company to check if they can do the transcript by the time you need it.\r\n\r\nThe prices below are for every 72 words (about 30 seconds of speech for someone speaking at normal speed).\r\n\r\n### Transcription costs\r\n\r\nTurnaround time | Cost\r\n----|----\t\t\t\r\n48 hours’ turnaround, per 72 words | £2.20\t\r\n12 working days’ turnaround, per 72 words | £1.60",
+  "components": [
+    {
+      "_id": "page.adminrcjjudgmentonly--warning",
+      "_type": "warning",
+      "html": "The time begins when the company starts the work - not when you submit your application.",
+      "iconFallbackText": "warning"
+    },
+    {
+      "_id": "page.adminrcjjudgmentonly--content",
+      "_type": "content",
+      "html": "### Contact details\r\n\r\nWebsite: [www.opus2.com](https://www.opus2.com)\r\n\r\nTelephone: 020 7831 5627\r\n\r\nEmail: <civil@opus2.digital>"
+    }
+  ],
+  "heading": "Opus 2 will transcribe the hearing",
+  "show": {
+    "all": [
+      {
+        "identifier": "judgment",
+        "operator": "defined"
+      },
+      {
+        "identifier": "partA",
+        "negated": true,
+        "operator": "defined"
+      },
+      {
+        "identifier": "partB",
+        "negated": true,
+        "operator": "defined"
+      },
+      {
+        "identifier": "partD",
+        "negated": true,
+        "operator": "defined"
+      },
+      {
+        "identifier": "other",
+        "negated": true,
+        "operator": "defined"
+      }
+    ]
+  },
+  "url": "judgment-only"
+}

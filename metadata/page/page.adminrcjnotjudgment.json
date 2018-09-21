@@ -1,0 +1,21 @@
+{
+  "_id": "page.adminrcjnotjudgment",
+  "_type": "page.content",
+  "body": "## Contact details\r\n\r\nCriminal Appeal Office  \r\nRoyal Courts of Justice  \r\nStrand  \r\nLondon  \r\nWC2A 2LL  \r\n\r\nTelephone: 020 7947 6011\r\n\r\nEmail: <criminalappealoffice.generaloffice@hmcts.x.gsi.gov.uk>\r\n\r\n\r\nClick ‘Continue’ to fill in details about the hearing you want transcribed.",
+  "heading": "The Administrative Court Office will deal with your request",
+  "show": {
+    "all": [
+      {
+        "identifier": "admin-rcj-wholeorpart",
+        "operator": "is",
+        "value": "admin-rcj-parts"
+      },
+      {
+        "identifier": "judgment",
+        "negated": true,
+        "operator": "defined"
+      }
+    ]
+  },
+  "url": "not-judgment"
+}

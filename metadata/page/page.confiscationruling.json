@@ -1,0 +1,13 @@
+{
+  "_id": "page.confiscationruling",
+  "_isa": "page.part",
+  "_type": "page.form",
+  "heading": "Enter details about the confiscation ruling",
+  "model": "confiscationruling_details",
+  "show": {
+    "identifier": "confiscation",
+    "operator": "is",
+    "value": "yes"
+  },
+  "url": "confiscationruling"
+}

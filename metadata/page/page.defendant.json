@@ -1,0 +1,20 @@
+{
+  "_id": "page.defendant",
+  "_type": "page.singlequestion",
+  "components": [
+    {
+      "_id": "page.defendant--text",
+      "_type": "text",
+      "label": "Defendant",
+      "name": "defendant",
+      "repeatable": true,
+      "repeatableHeading": "Enter defendant name",
+      "show": {
+        "identifier": "area-of-law",
+        "operator": "is",
+        "value": "criminal"
+      }
+    }
+  ],
+  "url": "defendant"
+}

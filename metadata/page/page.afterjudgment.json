@@ -1,0 +1,13 @@
+{
+  "_id": "page.afterjudgment",
+  "_isa": "page.part",
+  "_type": "page.form",
+  "heading": "Enter details about the proceedings after judgment",
+  "model": "afterjudgment_details",
+  "show": {
+    "identifier": "afterjudgment",
+    "operator": "is",
+    "value": "yes"
+  },
+  "url": "after-judgment"
+}

@@ -1,0 +1,32 @@
+{
+  "_id": "page.adminnotregionalparts",
+  "_type": "page.singlequestion",
+  "components": [
+    {
+      "_id": "page.adminnotregionalparts--radios",
+      "_type": "radios",
+      "items": [
+        {
+          "_id": "page.adminnotregionalparts--radios--whole",
+          "_type": "radio",
+          "label": "Whole hearing",
+          "value": "admin-rcj-whole"
+        },
+        {
+          "_id": "page.adminnotregionalparts--radios--parts",
+          "_type": "radio",
+          "label": "Specific parts of the hearing",
+          "value": "admin-rcj-parts"
+        }
+      ],
+      "legend": "Select the parts of the hearing you want transcribed",
+      "name": "admin-rcj-wholeorpart",
+      "show": {
+        "identifier": "adminregional",
+        "operator": "is",
+        "value": "no"
+      }
+    }
+  ],
+  "url": "whole-or-parts"
+}

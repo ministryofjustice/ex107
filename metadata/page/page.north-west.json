@@ -1,0 +1,90 @@
+{
+  "_id": "page.north-west",
+  "_type": "page.singlequestion",
+  "components": [
+    {
+      "_id": "page.north-west--radios.nwcrown",
+      "_type": "radios",
+      "items": [
+        {
+          "_id": "page.north-west--radios.nwcrown--radio.bolton",
+          "_type": "radio",
+          "label": "Bolton Combined Court - Crown Court",
+          "value": "bolton"
+        },
+        {
+          "_id": "page.north-west--radios.nwcrown--radio.burnley",
+          "_type": "radio",
+          "label": "Burnley Combined Court - Crown Court",
+          "value": "burnley"
+        },
+        {
+          "_id": "page.north-west--radios.nwcrown--radio.carlisle",
+          "_type": "radio",
+          "label": "Carlisle Combined Court - Crown Court",
+          "value": "carlisle"
+        },
+        {
+          "_id": "page.north-west--radios.nwcrown--radio.chester",
+          "_type": "radio",
+          "label": "Chester Crown Court",
+          "value": "chester"
+        },
+        {
+          "_id": "page.north-west--radios.nwcrown--radio.lancaster",
+          "_type": "radio",
+          "label": "Lancaster Crown Court",
+          "value": "lancaster"
+        },
+        {
+          "_id": "page.north-west--radios.nwcrown--radio.liverpool",
+          "_type": "radio",
+          "label": "Liverpool Crown Court",
+          "value": "liverpool"
+        },
+        {
+          "_id": "page.north-west--radios.nwcrown--radio.manchestercrsq",
+          "_type": "radio",
+          "label": "Manchester Crown Court (Crown Square)",
+          "value": "manchestercrsq"
+        },
+        {
+          "_id": "page.north-west--radios.nwcrown--radio.manchestermins",
+          "_type": "radio",
+          "label": "Manchester Crown Court (Minshull)",
+          "value": "manchestermins"
+        },
+        {
+          "_id": "page.north-west--radios.nwcrown--radio.preston",
+          "_type": "radio",
+          "label": "Preston Crown Court (Sessions House)",
+          "value": "preston"
+        },
+        {
+          "_id": "page.north-west--radios.nwcrown--radio.warrington",
+          "_type": "radio",
+          "label": "Warrington Crown Court",
+          "value": "warrington"
+        },
+        {
+          "_id": "page.north-west--radios.nwcrown--radio.barrow",
+          "_type": "radio",
+          "label": "Barrow-in-Furness (Satellite Court for Carlisle Crown Court)",
+          "value": "barrow"
+        }
+      ],
+      "legend": "Select the Crown Court",
+      "name": "nwcrown"
+    }
+  ],
+  "enableSteps": true,
+  "show": {
+    "identifier": "crownregion",
+    "operator": "is",
+    "value": "crownnw"
+  },
+  "steps": [
+    "page.mwc--2"
+  ],
+  "url": "north-west"
+}

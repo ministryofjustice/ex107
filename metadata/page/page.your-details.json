@@ -1,0 +1,111 @@
+{
+  "_id": "page.your-details",
+  "_type": "page.form",
+  "components": [
+    {
+      "_id": "page.your-details--text.yourname",
+      "_type": "text",
+      "label": "Full name",
+      "name": "yourname"
+    },
+    {
+      "_id": "page.your-details--text.yourref",
+      "_type": "text",
+      "label": "Your reference",
+      "name": "yourref",
+      "validation": {
+        "required": false
+      }
+    },
+    {
+      "_id": "page.your-details--email.email",
+      "_type": "email",
+      "label": "Email address",
+      "name": "email"
+    },
+    {
+      "_id": "page.your-details--text.phone",
+      "_type": "text",
+      "label": "Telephone number",
+      "name": "phone"
+    },
+    {
+      "_id": "page.your-details--fieldset",
+      "_type": "fieldset",
+      "components": [
+        {
+          "_id": "page.your-details--fieldset--text.address",
+          "_type": "text",
+          "label": "Building number or name",
+          "name": "address"
+        },
+        {
+          "_id": "page.your-details--fieldset--text.addresstwo",
+          "_type": "text",
+          "label": "Street",
+          "name": "addresstwo"
+        },
+        {
+          "_id": "page.your-details--fieldset--text.town",
+          "_type": "text",
+          "label": "Town or city",
+          "name": "town"
+        },
+        {
+          "_id": "page.your-details--fieldset--text.County",
+          "_type": "text",
+          "label": "County",
+          "name": "county",
+          "validation": {
+            "required": false
+          }
+        },
+        {
+          "_id": "page.your-details--fieldset--text.postcode",
+          "_type": "text",
+          "label": "Post code",
+          "name": "postcode",
+          "validation": {
+            "pattern": "^([A-PR-UWYZ0-9][A-HK-Y0-9][AEHMNPRTVXY0-9]?[ABEHMNPRVWXY0-9]? {1,2}[0-9][ABD-HJLN-UW-Z]{2}|GIR 0AA)$"
+          }
+        }
+      ],
+      "legend": "Address"
+    },
+    {
+      "_id": "page.your-details--radios.alsobilling",
+      "_type": "radios",
+      "items": [
+        {
+          "_id": "page.your-details--radios.alsobilling--radio.yes",
+          "_type": "radio",
+          "label": "Yes",
+          "value": "yes"
+        },
+        {
+          "_id": "page.your-details--radios.alsobilling--radio.no",
+          "_type": "radio",
+          "label": "No",
+          "value": "no"
+        }
+      ],
+      "legend": "Is this also your billing address?",
+      "name": "alsobilling"
+    },
+    {
+      "_id": "page.your-details--textarea.dxaddress",
+      "_type": "textarea",
+      "label": "DX address",
+      "name": "dxaddress",
+      "validation": {
+        "required": false
+      }
+    }
+  ],
+  "enableSteps": true,
+  "heading": "Enter your details",
+  "steps": [
+    "page.billing-address--2"
+  ],
+  "url": "your-details"
+}

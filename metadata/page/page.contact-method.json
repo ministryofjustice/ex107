@@ -1,0 +1,33 @@
+{
+  "_id": "page.contact-method",
+  "_type": "page.singlequestion",
+  "components": [
+    {
+      "_id": "page.contact-method--radios.contact-method",
+      "_type": "radios",
+      "items": [
+        {
+          "_id": "page.contact-method--radios.contact-method--radio.email",
+          "_type": "radio",
+          "label": "Email",
+          "value": "email"
+        },
+        {
+          "_id": "page.contact-method--radios.contact-method--radio.phone",
+          "_type": "radio",
+          "label": "Phone",
+          "value": "phone"
+        },
+        {
+          "_id": "page.contact-method--radios.contact-method--radio.post",
+          "_type": "radio",
+          "label": "Post",
+          "value": "post"
+        }
+      ],
+      "legend": "How should the transcription company contact you?",
+      "name": "contact-method"
+    }
+  ],
+  "url": "contact-method"
+}

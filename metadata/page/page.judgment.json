@@ -1,0 +1,13 @@
+{
+  "_id": "page.judgment",
+  "_isa": "page.part",
+  "_type": "page.form",
+  "heading": "Enter details about the judgment",
+  "model": "judgment_details",
+  "show": {
+    "identifier": "judgment",
+    "operator": "is",
+    "value": "yes"
+  },
+  "url": "judgment"
+}

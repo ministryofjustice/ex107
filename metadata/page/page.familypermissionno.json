@@ -1,0 +1,54 @@
+{
+  "_id": "page.familypermissionno",
+  "_type": "page.singlequestion",
+  "components": [
+    {
+      "_id": "page.familypermissionno--radios",
+      "_type": "radios",
+      "items": [
+        {
+          "_id": "page.familypermissionno--radios--yes",
+          "_type": "radio",
+          "conditionalComponent": {
+            "_id": "page.familypermissionno--radios--yes--fileupload",
+            "_type": "fileupload",
+            "label": "Attach a copy of the court order",
+            "name": "courtorderupload"
+          },
+          "label": "Yes",
+          "value": "yes"
+        },
+        {
+          "_id": "page.familypermissionno--radios--no",
+          "_type": "radio",
+          "conditionalComponent": {
+            "_id": "page.familypermissionno--radios--no--fileupload",
+            "_type": "fileupload",
+            "hint": "Download, fill in and attach [Form C2](https://www.gov.uk/government/publications/form-c2-application-for-permission-to-start-proceedings-for-an-order-or-directions-in-existing-proceedings-to-be-joined-as-or-cease-to-be-a-part) (for family cases) or [Form D11](https://www.gov.uk/government/publications/form-d11-application-notice) (for divorce cases)",
+            "label": "Attach form asking for permission",
+            "name": "permissionform"
+          },
+          "label": "No",
+          "value": "no"
+        }
+      ],
+      "legend": "Do you have a written court order giving you permission?",
+      "name": "familycourtorder",
+      "show": {
+        "all": [
+          {
+            "identifier": "area-of-law",
+            "operator": "is",
+            "value": "family"
+          },
+          {
+            "identifier": "partynonparty",
+            "operator": "is",
+            "value": "no"
+          }
+        ]
+      }
+    }
+  ],
+  "url": "family-permission"
+}

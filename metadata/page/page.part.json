@@ -1,0 +1,24 @@
+{
+  "_id": "page.part",
+  "_type": "page.form",
+  "components": [
+    {
+      "_id": "page.part--date",
+      "_isa": "date.part",
+      "_type": "date",
+      "validation": {
+        "required": true
+      }
+    },
+    {
+      "_id": "page.part--textarea",
+      "_isa": "details.part",
+      "_type": "textarea",
+      "validation": {
+        "required": false
+      }
+    }
+  ],
+  "heading": "Enter details about [part]",
+  "url": "part"
+}

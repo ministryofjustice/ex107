@@ -1,0 +1,61 @@
+{
+  "_id": "page.adminrcjparts",
+  "_type": "page.form",
+  "components": [
+    {
+      "_id": "page.adminrcjparts--checkboxes",
+      "_type": "checkboxes",
+      "items": [
+        {
+          "_id": "page.adminrcjparts--checkboxes--partA",
+          "_type": "checkbox",
+          "label": "Part A",
+          "name": "partA",
+          "value": "partA"
+        },
+        {
+          "_id": "page.adminrcjparts--checkboxes--partB",
+          "_type": "checkbox",
+          "label": "Part B",
+          "name": "partB",
+          "value": "partB"
+        },
+        {
+          "_id": "page.adminrcjparts--checkboxes--judgment",
+          "_type": "checkbox",
+          "label": "Judgment",
+          "name": "judgment",
+          "value": "judgment"
+        },
+        {
+          "_id": "page.adminrcjparts--checkboxes--partD",
+          "_type": "checkbox",
+          "label": "Part D",
+          "name": "partD",
+          "value": "partD"
+        },
+        {
+          "_id": "page.adminrcjparts--checkboxes--other",
+          "_type": "checkbox",
+          "conditionalComponent": {
+            "_id": "page.adminrcjparts--checkboxes--other--text",
+            "_type": "text",
+            "label": "Enter the part of the hearing you want transcribed",
+            "name": "other-details"
+          },
+          "label": "Other",
+          "name": "other",
+          "value": "other"
+        }
+      ],
+      "legend": "Select as many as you need",
+      "show": {
+        "identifier": "admin-rcj-wholeorpart",
+        "operator": "is",
+        "value": "admin-rcj-parts"
+      }
+    }
+  ],
+  "heading": "Select the parts of the hearing you want transcribed",
+  "url": "parts"
+}

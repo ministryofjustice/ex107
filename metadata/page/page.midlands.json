@@ -1,0 +1,108 @@
+{
+  "_id": "page.midlands",
+  "_type": "page.singlequestion",
+  "components": [
+    {
+      "_id": "page.midlands--radios.midlandscrown",
+      "_type": "radios",
+      "items": [
+        {
+          "_id": "page.midlands--radios.midlandscrown--radio.birmingham",
+          "_type": "radio",
+          "label": "Birmingham Crown Court",
+          "value": "birmingham"
+        },
+        {
+          "_id": "page.midlands--radios.midlandscrown--radio.coventry",
+          "_type": "radio",
+          "label": "Coventry Combined Court - Crown Court",
+          "value": "coventry"
+        },
+        {
+          "_id": "page.midlands--radios.midlandscrown--radio.derby",
+          "_type": "radio",
+          "label": "Derby Combined Court - Crown Court",
+          "value": "derby"
+        },
+        {
+          "_id": "page.midlands--radios.midlandscrown--radio.hereford",
+          "_type": "radio",
+          "label": "Hereford Crown Court",
+          "value": "hereford"
+        },
+        {
+          "_id": "page.midlands--radios.midlandscrown--radio.leicester",
+          "_type": "radio",
+          "label": "Leicester Crown Court",
+          "value": "leicester"
+        },
+        {
+          "_id": "page.midlands--radios.midlandscrown--radio.lincoln",
+          "_type": "radio",
+          "label": "Lincoln Crown Court",
+          "value": "lincoln"
+        },
+        {
+          "_id": "page.midlands--radios.midlandscrown--radio.northampton",
+          "_type": "radio",
+          "label": "Northampton Combined Court - Crown Court",
+          "value": "northampton"
+        },
+        {
+          "_id": "page.midlands--radios.midlandscrown--radio.nottingham",
+          "_type": "radio",
+          "label": "Nottingham Crown Court",
+          "value": "nottingham"
+        },
+        {
+          "_id": "page.midlands--radios.midlandscrown--radio.shrewsbury",
+          "_type": "radio",
+          "label": "Shrewsbury Crown Court",
+          "value": "shrewsbury"
+        },
+        {
+          "_id": "page.midlands--radios.midlandscrown--radio.stafford",
+          "_type": "radio",
+          "label": "Stafford Combined Court - Crown Court",
+          "value": "stafford"
+        },
+        {
+          "_id": "page.midlands--radios.midlandscrown--radio.stoke",
+          "_type": "radio",
+          "label": "Stoke-on-Trent Combined Court - Crown Court",
+          "value": "stoke"
+        },
+        {
+          "_id": "page.midlands--radios.midlandscrown--radio.warwick",
+          "_type": "radio",
+          "label": "Warwick Combined Court - Crown Court",
+          "value": "warwick"
+        },
+        {
+          "_id": "page.midlands--radios.midlandscrown--radio.wolverhampton",
+          "_type": "radio",
+          "label": "Wolverhampton Combined Court - Crown Court",
+          "value": "wolverhampton"
+        },
+        {
+          "_id": "page.midlands--radios.midlandscrown--radio.worcester",
+          "_type": "radio",
+          "label": "Worcester Crown Court",
+          "value": "worcester"
+        }
+      ],
+      "legend": "Select the Crown Court",
+      "name": "midlandscrown"
+    }
+  ],
+  "enableSteps": true,
+  "show": {
+    "identifier": "crownregion",
+    "operator": "is",
+    "value": "crownmidlands"
+  },
+  "steps": [
+    "page.epiq"
+  ],
+  "url": "midlands"
+}

@@ -1,0 +1,31 @@
+{
+  "_id": "page.telephonehearingdetails",
+  "_type": "page.form",
+  "components": [
+    {
+      "_id": "page.telephonehearingdetails--provider",
+      "_type": "text",
+      "label": "Service provider name",
+      "name": "serviceprovider",
+      "validation": {
+        "required": false
+      }
+    },
+    {
+      "_id": "page.telephonehearingdetails--billingno",
+      "_type": "text",
+      "label": "Billing number",
+      "name": "billingno",
+      "validation": {
+        "required": false
+      }
+    }
+  ],
+  "heading": "Enter details of the telephone hearing",
+  "show": {
+    "identifier": "telephone",
+    "operator": "is",
+    "value": "yes"
+  },
+  "url": "details"
+}

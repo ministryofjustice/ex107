@@ -1,0 +1,13 @@
+{
+  "_id": "page.evidence",
+  "_isa": "page.part",
+  "_type": "page.form",
+  "heading": "Enter details about the evidence",
+  "model": "evidence_details",
+  "show": {
+    "identifier": "evidence",
+    "operator": "is",
+    "value": "yes"
+  },
+  "url": "evidence"
+}

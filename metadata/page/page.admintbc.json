@@ -1,0 +1,47 @@
+{
+  "_id": "page.admintbc",
+  "_type": "page.content",
+  "body": "**Operational input needed to help identify who will handle the request.**",
+  "heading": "TO BE CONFIRMED will transcribe the hearing",
+  "show": {
+    "conditionsType": "exactly",
+    "exactly": [
+      {
+        "identifier": "admin-rcj-wholeorpart",
+        "operator": "is",
+        "value": "admin-rcj-whole"
+      },
+      {
+        "all": [
+          {
+            "identifier": "judgment",
+            "operator": "defined"
+          },
+          {
+            "any": [
+              {
+                "identifier": "partA",
+                "operator": "defined"
+              },
+              {
+                "identifier": "partB",
+                "operator": "defined"
+              },
+              {
+                "identifier": "partD",
+                "operator": "defined"
+              },
+              {
+                "identifier": "other",
+                "operator": "defined"
+              }
+            ],
+            "conditionsType": "any"
+          }
+        ],
+        "conditionsType": "all"
+      }
+    ]
+  },
+  "url": "judgment-plus-other"
+}

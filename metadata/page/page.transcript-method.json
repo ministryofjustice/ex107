@@ -1,0 +1,27 @@
+{
+  "_id": "page.transcript-method",
+  "_type": "page.singlequestion",
+  "components": [
+    {
+      "_id": "page.transcript-method--radios.transcript-method",
+      "_type": "radios",
+      "items": [
+        {
+          "_id": "page.transcript-method--radios.transcript-method--radio.email",
+          "_type": "radio",
+          "label": "Email",
+          "value": "email"
+        },
+        {
+          "_id": "page.transcript-method--radios.transcript-method--radio.post",
+          "_type": "radio",
+          "label": "Post",
+          "value": "post"
+        }
+      ],
+      "legend": "How would you like to get the transcript?",
+      "name": "transcript-method"
+    }
+  ],
+  "url": "transcript-method"
+}

@@ -1,0 +1,13 @@
+{
+  "_id": "page.counselsremarks",
+  "_isa": "page.part",
+  "_type": "page.form",
+  "heading": "Enter details about the counsels’ opening or closing remarks",
+  "model": "counselsremarks_details",
+  "show": {
+    "identifier": "openremarks",
+    "operator": "is",
+    "value": "yes"
+  },
+  "url": "counsels-remarks"
+}

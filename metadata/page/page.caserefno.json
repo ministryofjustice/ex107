@@ -1,0 +1,56 @@
+{
+  "_id": "page.caserefno",
+  "_type": "page.form",
+  "components": [
+    {
+      "_id": "page.caserefno--radios",
+      "_type": "radios",
+      "items": [
+        {
+          "_id": "page.caserefno--radios--yes",
+          "_type": "radio",
+          "conditionalComponent": {
+            "_id": "page.caserefno--radios--yes--text",
+            "_type": "text",
+            "label": "Case reference number",
+            "name": "caserefnumber"
+          },
+          "label": "Yes",
+          "value": "yes"
+        },
+        {
+          "_id": "page.caserefno--radios--no",
+          "_type": "radio",
+          "label": "No",
+          "value": "no"
+        }
+      ],
+      "legend": "Found in court documents or on the list showing where the case would be heard",
+      "name": "caserefno"
+    },
+    {
+      "_id": "page.caserefno--details",
+      "_type": "details",
+      "html": "The amount of information you provide can affect:\r\n\r\n- how long it takes to process your request\r\n- the price you’re charged for the transcript\r\n\r\nFor example, if you do not know the start and end times of the parts of the hearing you want transcribed, the transcription company may transcribe more of the hearing than you need.",
+      "summary": "Why are we asking for these details?"
+    }
+  ],
+  "enableSteps": true,
+  "heading": "Do you have a case reference number?",
+  "sectionHeading": "Hearing details",
+  "steps": [
+    "page.nameofcourt",
+    "page.hearingroomnumber",
+    "page.defendant",
+    "page.claimantdefendant",
+    "page.claimantrespondent",
+    "page.judgename",
+    "page.solicitorbarrister",
+    "page.partynonparty",
+    "page.reportrestriction",
+    "page.publicexpense",
+    "page.telephonehearing",
+    "page.welsh"
+  ],
+  "url": "case-reference"
+}

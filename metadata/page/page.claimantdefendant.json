@@ -1,0 +1,29 @@
+{
+  "_id": "page.claimantdefendant",
+  "_type": "page.form",
+  "components": [
+    {
+      "_id": "page.claimantdefendant--text",
+      "_type": "text",
+      "label": "Claimant",
+      "name": "claimant",
+      "repeatable": true,
+      "repeatableHeading": "Enter claimant name"
+    },
+    {
+      "_id": "page.claimantdefendant--text--2",
+      "_type": "text",
+      "label": "Defendant",
+      "name": "defendant",
+      "repeatable": true,
+      "repeatableHeading": "Enter defendant name"
+    }
+  ],
+  "heading": "Claimant and defendant names",
+  "show": {
+    "identifier": "area-of-law",
+    "operator": "is",
+    "value": "civil"
+  },
+  "url": "claimant-defendant"
+}

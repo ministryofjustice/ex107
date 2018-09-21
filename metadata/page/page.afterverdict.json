@@ -1,0 +1,13 @@
+{
+  "_id": "page.afterverdict",
+  "_isa": "page.part",
+  "_type": "page.form",
+  "heading": "Enter details about the proceedings after verdict",
+  "model": "afterverdict_details",
+  "show": {
+    "identifier": "afterverdict",
+    "operator": "is",
+    "value": "yes"
+  },
+  "url": "after-verdict"
+}

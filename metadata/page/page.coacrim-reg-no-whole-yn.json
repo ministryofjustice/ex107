@@ -1,0 +1,44 @@
+{
+  "_id": "page.coacrim-reg-no-whole-yn",
+  "_type": "page.singlequestion",
+  "components": [
+    {
+      "_id": "page.coacrim-reg-no-whole-yn--radios",
+      "_type": "radios",
+      "items": [
+        {
+          "_id": "page.coacrim-reg-no-whole-yn--radios--whole",
+          "_type": "radio",
+          "label": "Whole hearing",
+          "value": "whole"
+        },
+        {
+          "_id": "page.coacrim-reg-no-whole-yn--radios--parts",
+          "_type": "radio",
+          "label": "Specific parts of the hearing",
+          "show": {
+            "identifier": "coacrimregional",
+            "operator": "is",
+            "value": "no"
+          },
+          "value": "parts"
+        }
+      ],
+      "legend": "Select the parts of the hearing you want transcribed",
+      "name": "coacrimregionalnowholeorpart"
+    }
+  ],
+  "enableSteps": true,
+  "show": {
+    "identifier": "coacrimregional",
+    "operator": "is",
+    "value": "no"
+  },
+  "steps": [
+    "page.coacrim-reg-no-parts",
+    "page.coacrim-reg-no-judgmentonly",
+    "page.crimappealoffice",
+    "page.coacrimtbc"
+  ],
+  "url": "whole-or-parts"
+}

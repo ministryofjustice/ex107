@@ -1,0 +1,58 @@
+{
+  "_id": "page.coacrim-reg-no-parts",
+  "_type": "page.form",
+  "components": [
+    {
+      "_id": "page.coacrim-reg-no-parts--checkboxes",
+      "_type": "checkboxes",
+      "items": [
+        {
+          "_id": "page.coacrim-reg-no-parts--checkboxes--judgment",
+          "_type": "checkbox",
+          "label": "Judgment",
+          "name": "judgment",
+          "value": "judgment"
+        },
+        {
+          "_id": "page.coacrim-reg-no-parts--checkboxes--part2",
+          "_type": "checkbox",
+          "label": "Part 2",
+          "name": "parttwo",
+          "value": "part2"
+        },
+        {
+          "_id": "page.coacrim-reg-no-parts--checkboxes--part3",
+          "_type": "checkbox",
+          "label": "Part 3",
+          "name": "partthree",
+          "value": "part3"
+        },
+        {
+          "_id": "page.coacrim-reg-no-parts--checkboxes--other",
+          "_type": "checkbox",
+          "conditionalComponent": {
+            "_id": "page.coacrim-reg-no-parts--checkboxes--other--text",
+            "_type": "text",
+            "label": "Enter the part of the hearing you want transcribed",
+            "name": "other-details",
+            "show": true
+          },
+          "label": "Other",
+          "name": "other",
+          "value": "other"
+        }
+      ],
+      "legend": "Choose as many as you need",
+      "show": {
+        "identifier": "coacrimregionalnowholeorpart",
+        "operator": "is",
+        "value": "parts"
+      },
+      "validation": {
+        "required": true
+      }
+    }
+  ],
+  "heading": "Select the parts of the hearing you want transcribed",
+  "url": "parts"
+}

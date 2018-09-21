@@ -1,0 +1,21 @@
+{
+  "_id": "page.coacivil",
+  "_type": "page.content",
+  "body": "**We need operational input to understand the process for Court of Appeal Civil transcriptions**",
+  "heading": "TO BE CONFIRMED",
+  "show": {
+    "all": [
+      {
+        "identifier": "area-of-law",
+        "operator": "is",
+        "value": "civil"
+      },
+      {
+        "identifier": "civil-court-type",
+        "operator": "is",
+        "value": "coacivil"
+      }
+    ]
+  },
+  "url": "civil-appeal"
+}

@@ -1,0 +1,20 @@
+{
+  "_id": "page.famcivtrib--choose",
+  "_type": "page.content",
+  "body": "Before filling in the rest of the application, contact the company to check if they can do the transcript by the time you need it.\r\n\r\nThe prices below are for every 72 words (about 30 seconds of speech for someone speaking at normal speed).",
+  "components": [
+    {
+      "_id": "page.famcivtrib--choose--warning",
+      "_type": "warning",
+      "html": "The time begins when the company starts the work - not when you submit your application.",
+      "iconFallbackText": "warning"
+    },
+    {
+      "_id": "page.famcivtrib--choose--content",
+      "_type": "content",
+      "html": "Company | Contact | Price for 48 hour turnaround, per 72 words | Price for 12 working days' turnaround, per 72 words\r\n----|----|----|----\r\nAuscript | Company website/contact | £1.22 | £0.95\r\nEpiq | Company website/contact | £1.21 | £0.98\r\nMarten Walsh Cherer | Company website/contact | £1.33 | £1.11\r\nOpus 2| Company website/contact | £2.20 | £1.60\r\nThe Transcription Agency | Company website/contact | £1.78 | £1.34\r\nUbiquis | Company website/contact | £1.24 | £0.70"
+    }
+  ],
+  "heading": "Choose a transcription company",
+  "url": "company"
+}

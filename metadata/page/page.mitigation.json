@@ -1,0 +1,13 @@
+{
+  "_id": "page.mitigation",
+  "_isa": "page.part",
+  "_type": "page.form",
+  "heading": "Enter details about the mitigation",
+  "model": "mitigation_details",
+  "show": {
+    "identifier": "mitigation",
+    "operator": "is",
+    "value": "yes"
+  },
+  "url": "mitigation"
+}

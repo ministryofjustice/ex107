@@ -1,0 +1,81 @@
+{
+  "_id": "page.partscivfamtrib",
+  "_type": "page.singlequestion",
+  "components": [
+    {
+      "_id": "page.partscivfamtrib--checkboxes",
+      "_type": "checkboxes",
+      "hint": "Choose as many as you need",
+      "items": [
+        {
+          "_id": "page.partscivfamtrib--checkboxes--openclose",
+          "_type": "checkbox",
+          "label": "Counsels’ opening or closing submissions",
+          "name": "openclosesubs",
+          "value": "yes"
+        },
+        {
+          "_id": "page.partscivfamtrib--checkboxes--evidence",
+          "_type": "checkbox",
+          "label": "Evidence",
+          "name": "evidence",
+          "value": "yes"
+        },
+        {
+          "_id": "page.partscivfamtrib--checkboxes--judgment",
+          "_type": "checkbox",
+          "label": "Judgment",
+          "name": "judgment",
+          "value": "yes"
+        },
+        {
+          "_id": "page.partscivfamtrib--checkboxes--afterjudgment",
+          "_type": "checkbox",
+          "hint": "A transcript of what was said after the judge or jury delivered its verdict",
+          "label": "Proceedings after judgment",
+          "name": "afterjudgment",
+          "value": "yes"
+        },
+        {
+          "_id": "page.partscivfamtrib--checkboxes--other",
+          "_type": "checkbox",
+          "conditionalComponent": {
+            "_id": "page.partscivfamtrib--checkboxes--other--text",
+            "_type": "text",
+            "label": "Enter the part of the hearing you want transcribed",
+            "name": "otherpart",
+            "show": {
+              "identifier": "area-of-law",
+              "negated": true,
+              "operator": "is",
+              "value": "criminal"
+            }
+          },
+          "label": "Other",
+          "name": "otherpart",
+          "value": "yes"
+        }
+      ],
+      "legend": "Select the parts of the hearing you want transcribed",
+      "show": {
+        "all": [
+          {
+            "identifier": "area-of-law",
+            "negated": true,
+            "operator": "is",
+            "value": "criminal"
+          },
+          {
+            "identifier": "wholeorpart",
+            "operator": "is",
+            "value": "partshearing"
+          }
+        ]
+      },
+      "validation": {
+        "required": true
+      }
+    }
+  ],
+  "url": "parts-civil-family-tribunal"
+}

@@ -1,0 +1,8 @@
+{
+  "_id": "page.confirmation",
+  "_type": "page.confirmation",
+  "body": "If this email address is wrong, you can [change it here](#).\r\n\r\n## What happens next\r\n\r\nThe court or tribunal will look at your application.\r\n\r\nIf they approve it, they’ll send it to the transcription company.\r\n\r\nThe transcription company will contact you to:\r\n\r\n- give you a cost estimate\r\n- arrange payment\r\n- send you the transcript\r\n\r\nIf you order transcripts regularly, the company may do the work without giving you an estimate.\r\n\r\n[Apply for a transcript for another hearing]().",
+  "heading": "Application complete",
+  "lede": "We’ll send a confirmation email to [email@address.com].",
+  "url": "confirmation"
+}

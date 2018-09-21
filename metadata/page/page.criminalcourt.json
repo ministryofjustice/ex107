@@ -1,0 +1,39 @@
+{
+  "_id": "page.criminalcourt",
+  "_type": "page.singlequestion",
+  "components": [
+    {
+      "_id": "page.criminalcourt--radios",
+      "_type": "radios",
+      "hint": "You cannot get a transcript for a hearing at a magistrates' court",
+      "items": [
+        {
+          "_id": "page.criminalcourt--radios--crown",
+          "_type": "radio",
+          "label": "Crown Court",
+          "value": "crown"
+        },
+        {
+          "_id": "page.criminalcourt--radios--coa",
+          "_type": "radio",
+          "label": "Court of Appeal Criminal Division",
+          "value": "crim-coa"
+        }
+      ],
+      "legend": "Select the type of court",
+      "name": "criminal-court-type",
+      "show": {
+        "identifier": "area-of-law",
+        "operator": "is",
+        "value": "criminal"
+      }
+    }
+  ],
+  "enableSteps": true,
+  "extraComponents": [],
+  "steps": [
+    "page.crowncourtname",
+    "page.coaregional"
+  ],
+  "url": "criminal"
+}

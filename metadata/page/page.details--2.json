@@ -1,0 +1,87 @@
+{
+  "_id": "page.details--2",
+  "_type": "page.form",
+  "components": [
+    {
+      "_id": "page.details--2--fieldset",
+      "_type": "fieldset",
+      "components": [
+        {
+          "_id": "page.details--2--fieldset--text.fullname",
+          "_type": "text",
+          "label": "Full name",
+          "name": "fullnamesplitting"
+        },
+        {
+          "_id": "page.details--2--fieldset--number.percentsplitting",
+          "_type": "number",
+          "hint": "Enter a number only, without % sign",
+          "label": "Percentage of costs this person is paying",
+          "name": "percentsplitting",
+          "validation": {
+            "maximum": 100,
+            "minimum": 1
+          }
+        },
+        {
+          "_id": "page.details--2--fieldset--text.phonesplitting",
+          "_type": "text",
+          "label": "Phone number",
+          "name": "phonesplitting"
+        },
+        {
+          "_id": "page.details--2--fieldset--email.emailsplitting",
+          "_type": "email",
+          "label": "Email address",
+          "name": "emailsplitting"
+        },
+        {
+          "_id": "page.details--2--fieldset--text.buildingsplitting",
+          "_type": "text",
+          "label": "Building number or name",
+          "name": "buildingsplitting"
+        },
+        {
+          "_id": "page.details--2--fieldset--text.streetsplitting",
+          "_type": "text",
+          "label": "Street",
+          "name": "streetsplitting"
+        },
+        {
+          "_id": "page.details--2--fieldset--text.townsplitting",
+          "_type": "text",
+          "label": "Town or city",
+          "name": "townsplitting"
+        },
+        {
+          "_id": "page.details--2--fieldset--text.countysplitting",
+          "_type": "text",
+          "label": "County",
+          "name": "countysplitting",
+          "validation": {
+            "required": false
+          }
+        },
+        {
+          "_id": "page.details--2--fieldset--text.postcodesplitting",
+          "_type": "text",
+          "errors": {
+            "pattern": {
+              "inline": "Enter a valid UK postcode",
+              "summary": "Enter a valid UK postcode"
+            }
+          },
+          "label": "Postcode",
+          "name": "postcodesplitting",
+          "validation": {
+            "pattern": "^([A-PR-UWYZ0-9][A-HK-Y0-9][AEHMNPRTVXY0-9]?[ABEHMNPRVWXY0-9]? {1,2}[0-9][ABD-HJLN-UW-Z]{2}|GIR 0AA)$"
+          }
+        }
+      ],
+      "legend": "Person",
+      "repeatable": true
+    }
+  ],
+  "heading": "Enter details of who you’re splitting costs with",
+  "url": "details"
+}

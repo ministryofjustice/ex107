@@ -1,0 +1,39 @@
+{
+  "_id": "page.partynonparty",
+  "_type": "page.singlequestion",
+  "components": [
+    {
+      "_id": "page.partynonparty--radios",
+      "_type": "radios",
+      "hint": "Answer ‘yes’ if you’re a defendant, respondent, applicant, claimant or legal representative in the case",
+      "items": [
+        {
+          "_id": "page.partynonparty--radios--yes",
+          "_type": "radio",
+          "label": "Yes",
+          "value": "yes"
+        },
+        {
+          "_id": "page.partynonparty--radios--no",
+          "_type": "radio",
+          "conditionalComponent": {
+            "_id": "page.partynonparty--radios--no--textarea",
+            "_type": "textarea",
+            "label": "Why do you want this transcript?",
+            "name": "whywant"
+          },
+          "label": "No",
+          "value": "no"
+        }
+      ],
+      "legend": "Are you directly involved in the case?",
+      "name": "partynonparty"
+    }
+  ],
+  "enableSteps": true,
+  "steps": [
+    "page.familypermissionno",
+    "page.civilpermissionno"
+  ],
+  "url": "directly-involved"
+}

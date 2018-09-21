@@ -1,0 +1,102 @@
+{
+  "_id": "page.south-west",
+  "_type": "page.singlequestion",
+  "components": [
+    {
+      "_id": "page.south-west--radios.swcrown",
+      "_type": "radios",
+      "items": [
+        {
+          "_id": "page.south-west--radios.swcrown--radio.bournemouth",
+          "_type": "radio",
+          "label": "Bournemouth Crown Court",
+          "value": "bournemouth"
+        },
+        {
+          "_id": "page.south-west--radios.swcrown--radio.bristol",
+          "_type": "radio",
+          "label": "Bristol Crown Court",
+          "value": "bristol"
+        },
+        {
+          "_id": "page.south-west--radios.swcrown--radio.exeter",
+          "_type": "radio",
+          "label": "Exeter Crown Court",
+          "value": "exeter"
+        },
+        {
+          "_id": "page.south-west--radios.swcrown--radio.gloucester",
+          "_type": "radio",
+          "label": "Gloucester Crown Court",
+          "value": "gloucester"
+        },
+        {
+          "_id": "page.south-west--radios.swcrown--radio.iow",
+          "_type": "radio",
+          "label": "Isle of Wight Combined Court",
+          "value": "iow"
+        },
+        {
+          "_id": "page.south-west--radios.swcrown--radio.plymouth",
+          "_type": "radio",
+          "label": "Plymouth Combined Court - Crown Court",
+          "value": "plymouth"
+        },
+        {
+          "_id": "page.south-west--radios.swcrown--radio.portsmouth",
+          "_type": "radio",
+          "label": "Portsmouth Combined Court - Crown Court",
+          "value": "portsmouth"
+        },
+        {
+          "_id": "page.south-west--radios.swcrown--radio.salisbury",
+          "_type": "radio",
+          "label": "Salisbury Law Courts - Crown Court",
+          "value": "salisbury"
+        },
+        {
+          "_id": "page.south-west--radios.swcrown--radio.southampton",
+          "_type": "radio",
+          "label": "Southampton Crown Court",
+          "value": "southampton"
+        },
+        {
+          "_id": "page.south-west--radios.swcrown--radio.swindon",
+          "_type": "radio",
+          "label": "Swindon Combined Court - Crown Court",
+          "value": "swindon"
+        },
+        {
+          "_id": "page.south-west--radios.swcrown--radio.taunton",
+          "_type": "radio",
+          "label": "Taunton Combined Court - Crown Court",
+          "value": "taunton"
+        },
+        {
+          "_id": "page.south-west--radios.swcrown--radio.truro",
+          "_type": "radio",
+          "label": "Truro Combined Court - Crown Court",
+          "value": "truro"
+        },
+        {
+          "_id": "page.south-west--radios.swcrown--radio.winchester",
+          "_type": "radio",
+          "label": "Winchester Combined Court - Crown Court",
+          "value": "winchester"
+        }
+      ],
+      "legend": "Select the Crown Court",
+      "name": "swcrown"
+    }
+  ],
+  "enableSteps": true,
+  "show": {
+    "identifier": "crownregion",
+    "operator": "is",
+    "value": "crownsw"
+  },
+  "steps": [
+    "page.transcription-agency"
+  ],
+  "url": "south-west"
+}

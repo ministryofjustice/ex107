@@ -1,0 +1,144 @@
+{
+  "_id": "page.wholeorpartcivfamtrib",
+  "_type": "page.singlequestion",
+  "components": [
+    {
+      "_id": "page.wholeorpartcivfamtrib--radios.wholeorpart",
+      "_type": "radios",
+      "items": [
+        {
+          "_id": "page.wholeorpartcivfamtrib--radios.wholeorpart--radio.wholehearing",
+          "_type": "radio",
+          "label": "Whole hearing",
+          "value": "wholehearing"
+        },
+        {
+          "_id": "page.wholeorpartcivfamtrib--radios.wholeorpart--radio.partshearing",
+          "_type": "radio",
+          "label": "Specific parts of the hearing",
+          "value": "partshearing"
+        }
+      ],
+      "legend": "Select the parts of the hearing you want transcribed",
+      "name": "wholeorpart"
+    }
+  ],
+  "enableSteps": true,
+  "sectionHeading": "The parts of the hearing you want transcribed",
+  "show": {
+    "conditionsType": "exactly",
+    "exactly": [
+      {
+        "all": [
+          {
+            "identifier": "area-of-law",
+            "operator": "is",
+            "value": "civil"
+          },
+          {
+            "identifier": "civil-court-type",
+            "operator": "is",
+            "value": "coacivil"
+          }
+        ]
+      },
+      {
+        "all": [
+          {
+            "identifier": "area-of-law",
+            "operator": "is",
+            "value": "civil"
+          },
+          {
+            "identifier": "civil-court-type",
+            "operator": "is",
+            "value": "admincourt"
+          },
+          {
+            "identifier": "adminregional",
+            "operator": "is",
+            "value": "yes"
+          }
+        ]
+      },
+      {
+        "all": [
+          {
+            "identifier": "area-of-law",
+            "operator": "is",
+            "value": "civil"
+          },
+          {
+            "identifier": "civil-court-type",
+            "operator": "is",
+            "value": "highcounty"
+          }
+        ]
+      },
+      {
+        "all": [
+          {
+            "identifier": "area-of-law",
+            "operator": "is",
+            "value": "criminal"
+          },
+          {
+            "identifier": "criminal-court-type",
+            "operator": "is",
+            "value": "crown"
+          }
+        ]
+      },
+      {
+        "all": [
+          {
+            "identifier": "area-of-law",
+            "operator": "is",
+            "value": "criminal"
+          },
+          {
+            "identifier": "criminal-court-type",
+            "operator": "is",
+            "value": "crim-coa"
+          },
+          {
+            "identifier": "coacrimregional",
+            "operator": "is",
+            "value": "yes"
+          }
+        ]
+      },
+      {
+        "identifier": "area-of-law",
+        "operator": "is",
+        "value": "family"
+      },
+      {
+        "identifier": "area-of-law",
+        "operator": "is",
+        "value": "tribunal"
+      }
+    ]
+  },
+  "steps": [
+    "page.partscivfamtrib",
+    "page.partscrim",
+    "page.samedate",
+    "page.opening",
+    "page.evidence",
+    "page.judgment",
+    "page.afterjudgment",
+    "page.other",
+    "page.prosecutionopening",
+    "page.mitigation",
+    "page.summingup",
+    "page.sentencingremarks",
+    "page.sentencinghearing",
+    "page.afterverdict",
+    "page.counselsremarks",
+    "page.legalargumentsruling",
+    "page.confiscationruling",
+    "page.one-day"
+  ],
+  "url": "whole-or-parts"
+}

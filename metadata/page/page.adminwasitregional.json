@@ -1,0 +1,32 @@
+{
+  "_id": "page.adminwasitregional",
+  "_type": "page.singlequestion",
+  "components": [
+    {
+      "_id": "page.adminwasitregional--radios",
+      "_type": "radios",
+      "items": [
+        {
+          "_id": "page.adminwasitregional--radios--yes",
+          "_type": "radio",
+          "label": "Yes",
+          "value": "yes"
+        },
+        {
+          "_id": "page.adminwasitregional--radios--no",
+          "_type": "radio",
+          "label": "No",
+          "value": "no"
+        }
+      ],
+      "legend": "Was the hearing in a regional court?",
+      "name": "adminregional",
+      "show": {
+        "identifier": "civil-court-type",
+        "operator": "is",
+        "value": "admincourt"
+      }
+    }
+  ],
+  "url": "administrative-court"
+}

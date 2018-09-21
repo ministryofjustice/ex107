@@ -1,0 +1,53 @@
+{
+  "_id": "page.civilpermissionno",
+  "_type": "page.singlequestion",
+  "components": [
+    {
+      "_id": "page.civilpermissionno--radios",
+      "_type": "radios",
+      "items": [
+        {
+          "_id": "page.civilpermissionno--radios--yes",
+          "_type": "radio",
+          "conditionalComponent": {
+            "_id": "page.civilpermissionno--radios--yes--fileupload",
+            "_type": "fileupload",
+            "label": "Attach a copy of the court order"
+          },
+          "label": "Yes",
+          "value": "yes"
+        },
+        {
+          "_id": "page.civilpermissionno--radios--no",
+          "_type": "radio",
+          "conditionalComponent": {
+            "_id": "page.civilpermissionno--radios--no--fileupload",
+            "_type": "fileupload",
+            "hint": "Download, fill in and attach [Form N244](https://www.gov.uk/government/publications/form-n244-application-notice)",
+            "label": "Attach form asking for permission",
+            "name": "permissionform"
+          },
+          "label": "No",
+          "value": "no"
+        }
+      ],
+      "legend": "Do you have a written court order giving you permission?",
+      "name": "civilcourtorder",
+      "show": {
+        "all": [
+          {
+            "identifier": "area-of-law",
+            "operator": "is",
+            "value": "civil"
+          },
+          {
+            "identifier": "partynonparty",
+            "operator": "is",
+            "value": "no"
+          }
+        ]
+      }
+    }
+  ],
+  "url": "civil-permission"
+}

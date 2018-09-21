@@ -1,0 +1,43 @@
+{
+  "_id": "page.publicexpense",
+  "_type": "page.singlequestion",
+  "components": [
+    {
+      "_id": "page.publicexpense--radios",
+      "_type": "radios",
+      "hint": "This means the court will pay for the transcript",
+      "items": [
+        {
+          "_id": "page.publicexpense--radios--yes",
+          "_type": "radio",
+          "conditionalComponent": {
+            "_id": "page.publicexpense--radios--yes--fileupload",
+            "_type": "fileupload",
+            "label": "If you have an order from the judge, attach it here",
+            "name": "publicexpenseorder",
+            "validation": {
+              "required": false
+            }
+          },
+          "label": "Yes",
+          "value": "yes"
+        },
+        {
+          "_id": "page.publicexpense--radios--no",
+          "_type": "radio",
+          "label": "No",
+          "value": "no"
+        },
+        {
+          "_id": "page.publicexpense--radios--dontknow",
+          "_type": "radio",
+          "label": "I do not know",
+          "value": "dn"
+        }
+      ],
+      "legend": "Did a judge order that the transcript should be paid for at public expense?",
+      "name": "publicexpense"
+    }
+  ],
+  "url": "public-expense"
+}

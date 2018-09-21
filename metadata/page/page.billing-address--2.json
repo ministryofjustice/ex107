@@ -1,0 +1,65 @@
+{
+  "_id": "page.billing-address--2",
+  "_type": "page.form",
+  "components": [
+    {
+      "_id": "page.billing-address--2--fieldset",
+      "_type": "fieldset",
+      "components": [
+        {
+          "_id": "page.billing-address--2--fieldset--text.billingbuilding",
+          "_type": "text",
+          "label": "Building number or name",
+          "name": "billingbuilding"
+        },
+        {
+          "_id": "page.billing-address--2--fieldset--text.billingstreet",
+          "_type": "text",
+          "label": "Street",
+          "name": "billingstreet"
+        },
+        {
+          "_id": "page.billing-address--2--fieldset--text.billingtown",
+          "_type": "text",
+          "label": "Town or city",
+          "name": "billingtown"
+        },
+        {
+          "_id": "page.billing-address--2--fieldset--text.billingtown--2",
+          "_type": "text",
+          "label": "County",
+          "name": "billingcounty",
+          "validation": {
+            "required": false
+          }
+        },
+        {
+          "_id": "page.billing-address--2--fieldset--text.billingpostcode",
+          "_type": "text",
+          "errors": {
+            "pattern": {
+              "inline": "Enter a valid UK postcode",
+              "summary": "Enter a valid UK postcode"
+            },
+            "required": {
+              "inline": "Please answer the question"
+            }
+          },
+          "label": "Post code",
+          "name": "billingpostcode",
+          "validation": {
+            "pattern": "^([A-PR-UWYZ0-9][A-HK-Y0-9][AEHMNPRTVXY0-9]?[ABEHMNPRVWXY0-9]? {1,2}[0-9][ABD-HJLN-UW-Z]{2}|GIR 0AA)$"
+          }
+        }
+      ],
+      "legend": "Enter your billing address",
+      "show": {
+        "identifier": "alsobilling",
+        "operator": "is",
+        "value": "no"
+      }
+    }
+  ],
+  "heading": "Your billing address",
+  "url": "billing-address"
+}

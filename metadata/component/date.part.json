@@ -1,0 +1,17 @@
+{
+  "_id": "date.part",
+  "_type": "date",
+  "label": "Date",
+  "name": "date",
+  "repeatable": true,
+  "repeatableAdd": "Add another date",
+  "show": {
+    "identifier": "samedate",
+    "negated": true,
+    "operator": "is",
+    "value": "yes"
+  },
+  "validation": {
+    "required": false
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "_id": "page.one-day",
+  "_type": "page.singlequestion",
+  "components": [
+    {
+      "_id": "page.one-day--radios.wholedate",
+      "_type": "radios",
+      "disabled": false,
+      "items": [
+        {
+          "_id": "page.one-day--radios.wholedate--radio.yes",
+          "_type": "radio",
+          "conditionalComponent": {
+            "_id": "page.one-day--radios.wholedate--radio.yes--date.wholeonedate",
+            "_type": "date",
+            "label": "Date of hearing",
+            "name": "wholeonedate"
+          },
+          "label": "Yes",
+          "value": "yes"
+        },
+        {
+          "_id": "page.one-day--radios.wholedate--radio.no",
+          "_type": "radio",
+          "label": "No",
+          "value": "no"
+        },
+        {
+          "_id": "page.one-day--radios.wholedate--radio.dn",
+          "_type": "radio",
+          "label": "I do not know",
+          "value": "dn"
+        }
+      ],
+      "legend": "Did the hearing take place on one day?",
+      "name": "wholedate",
+      "show": {
+        "identifier": "wholeorpart",
+        "operator": "is",
+        "value": "wholehearing"
+      }
+    }
+  ],
+  "enableSteps": true,
+  "steps": [
+    "page.dates"
+  ],
+  "url": "date"
+}

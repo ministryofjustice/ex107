@@ -1,0 +1,38 @@
+{
+  "_id": "page.coaregional",
+  "_type": "page.singlequestion",
+  "components": [
+    {
+      "_id": "page.coaregional--radios",
+      "_type": "radios",
+      "hint": "A regional court is a court other than at the Royal Courts of Justice in London",
+      "items": [
+        {
+          "_id": "page.coaregional--radios--yes",
+          "_type": "radio",
+          "label": "Yes",
+          "value": "yes"
+        },
+        {
+          "_id": "page.coaregional--radios--no",
+          "_type": "radio",
+          "label": "No",
+          "value": "no"
+        }
+      ],
+      "legend": "Was the hearing in a regional court?",
+      "name": "coacrimregional",
+      "show": {
+        "identifier": "criminal-court-type",
+        "operator": "is",
+        "value": "crim-coa"
+      }
+    }
+  ],
+  "enableSteps": true,
+  "steps": [
+    "page.coacrimregyes",
+    "page.coacrim-reg-no-whole-yn"
+  ],
+  "url": "court-of-appeal"
+}

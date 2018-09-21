@@ -1,0 +1,43 @@
+{
+  "_id": "page.coacrimtbc",
+  "_type": "page.content",
+  "body": "**Operational input needed to help identify who will handle the request.**",
+  "heading": "???? will transcribe the hearing",
+  "show": {
+    "conditionsType": "exactly",
+    "exactly": [
+      {
+        "identifier": "coacrimregionalnowholeorpart",
+        "operator": "is",
+        "value": "whole"
+      },
+      {
+        "all": [
+          {
+            "identifier": "judgment",
+            "operator": "defined"
+          },
+          {
+            "any": [
+              {
+                "identifier": "parttwo",
+                "operator": "defined"
+              },
+              {
+                "identifier": "partthree",
+                "operator": "defined"
+              },
+              {
+                "identifier": "other",
+                "operator": "defined"
+              }
+            ],
+            "conditionsType": "any"
+          }
+        ],
+        "conditionsType": "all"
+      }
+    ]
+  },
+  "url": "judgment-plus-other"
+}

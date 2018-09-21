@@ -1,0 +1,37 @@
+{
+  "_id": "page.dates",
+  "_type": "page.form",
+  "components": [
+    {
+      "_id": "page.dates--date.startdate",
+      "_type": "date",
+      "hint": "For example, 31 3 1980",
+      "label": "Start date",
+      "name": "startdate"
+    },
+    {
+      "_id": "page.dates--date.enddate",
+      "_type": "date",
+      "hint": "For example, 31 3 1980",
+      "label": "End date",
+      "name": "enddate"
+    },
+    {
+      "_id": "page.dates--textarea.datesdetails",
+      "_type": "textarea",
+      "hint": "For example, approximate start and end times, if you know them",
+      "label": "Details",
+      "name": "datesdetails",
+      "validation": {
+        "required": false
+      }
+    }
+  ],
+  "heading": "Enter the dates of the hearing",
+  "show": {
+    "identifier": "wholedate",
+    "operator": "is",
+    "value": "no"
+  },
+  "url": "dates"
+}

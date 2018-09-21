@@ -1,0 +1,13 @@
+{
+  "_id": "page.sentencinghearing",
+  "_isa": "page.part",
+  "_type": "page.form",
+  "heading": "Enter details about the sentencing hearing",
+  "model": "sentencinghearing_details",
+  "show": {
+    "identifier": "sentencehearing",
+    "operator": "is",
+    "value": "yes"
+  },
+  "url": "sentencing-hearing"
+}

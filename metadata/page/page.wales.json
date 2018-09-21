@@ -1,0 +1,60 @@
+{
+  "_id": "page.wales",
+  "_type": "page.singlequestion",
+  "components": [
+    {
+      "_id": "page.wales--radios.walescrown",
+      "_type": "radios",
+      "items": [
+        {
+          "_id": "page.wales--radios.walescrown--radio.caernarfon",
+          "_type": "radio",
+          "label": "Caernarfon Crown Court",
+          "value": "caernarfon"
+        },
+        {
+          "_id": "page.wales--radios.walescrown--radio.cardiff",
+          "_type": "radio",
+          "label": "Cardiff Crown Court",
+          "value": "cardiff"
+        },
+        {
+          "_id": "page.wales--radios.walescrown--radio.merthyr",
+          "_type": "radio",
+          "label": "Merthyr Tydfil Combined Court - Crown Court",
+          "value": "merthyr"
+        },
+        {
+          "_id": "page.wales--radios.walescrown--radio.mold",
+          "_type": "radio",
+          "label": "Mold Crown Court",
+          "value": "mold"
+        },
+        {
+          "_id": "page.wales--radios.walescrown--radio.newport",
+          "_type": "radio",
+          "label": "Newport Crown Court",
+          "value": "newport"
+        },
+        {
+          "_id": "page.wales--radios.walescrown--radio.swansea",
+          "_type": "radio",
+          "label": "Swansea Crown Court",
+          "value": "swansea"
+        }
+      ],
+      "legend": "Select the Crown Court",
+      "name": "walescrown"
+    }
+  ],
+  "enableSteps": true,
+  "show": {
+    "identifier": "crownregion",
+    "operator": "is",
+    "value": "crownwales"
+  },
+  "steps": [
+    "page.transcription-agency--2"
+  ],
+  "url": "wales"
+}

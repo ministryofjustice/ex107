@@ -1,0 +1,24 @@
+{
+  "_id": "page.ubiqus",
+  "_type": "page.form",
+  "components": [
+    {
+      "_id": "page.ubiqus--content1",
+      "_type": "content",
+      "html": "Before filling in the rest of the application, contact Ubiqus to check:\r\n\r\n- if they can do the transcript by the time you need it\r\n- how much they charge\r\n\r\nYou can pay more for them to do the work more quickly. The choices are:\r\n\r\n- overnight (within 24 hours)\r\n- within 48 hours\r\n- within 7 working days\r\n- within 3 working days\r\n- within 12 working days"
+    },
+    {
+      "_id": "page.ubiqus--warning",
+      "_type": "warning",
+      "html": "The time begins when the company starts the work - not when you submit your application.",
+      "iconFallbackText": "Warning"
+    },
+    {
+      "_id": "page.ubiqus--content2",
+      "_type": "content",
+      "html": "### Contact details\r\n\r\nWebsite: [www.ubiqus.co.uk/](https://www.ubiqus.co.uk/) \r\n\r\nTelephone: 020 7759 2695\r\n\r\nEmail: <legal@ubiqus.com>\r\n\r\nClick ‘continue’ to fill in details about the hearing you want transcribed."
+    }
+  ],
+  "heading": "Ubiqus will transcribe the hearing",
+  "url": "ubiqus"
+}

@@ -1,0 +1,29 @@
+{
+  "_id": "page.claimantrespondent",
+  "_type": "page.form",
+  "components": [
+    {
+      "_id": "page.claimantrespondent--text",
+      "_type": "text",
+      "label": "Applicant",
+      "name": "claimant",
+      "repeatable": true,
+      "repeatableHeading": "Enter applicant name"
+    },
+    {
+      "_id": "page.claimantrespondent--text--2",
+      "_type": "text",
+      "label": "Respondent",
+      "name": "respondent",
+      "repeatable": true,
+      "repeatableHeading": "Enter respondent name"
+    }
+  ],
+  "heading": "Applicant and respondent names",
+  "show": {
+    "identifier": "area-of-law",
+    "operator": "is",
+    "value": "family"
+  },
+  "url": "applicant-respondent"
+}

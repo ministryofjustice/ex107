@@ -1,0 +1,72 @@
+{
+  "_id": "page.crowncourtname",
+  "_type": "page.singlequestion",
+  "components": [
+    {
+      "_id": "page.crowncourtname--radios.crownregion",
+      "_type": "radios",
+      "items": [
+        {
+          "_id": "page.crowncourtname--radios.crownregion--radio.yes",
+          "_type": "radio",
+          "label": "London",
+          "value": "crownlondon"
+        },
+        {
+          "_id": "page.crowncourtname--radios.crownregion--radio.crownmidlands",
+          "_type": "radio",
+          "label": "Midlands",
+          "value": "crownmidlands"
+        },
+        {
+          "_id": "page.crowncourtname--radios.crownregion--radio.crownne",
+          "_type": "radio",
+          "label": "North-east Engand",
+          "value": "crownne"
+        },
+        {
+          "_id": "page.crowncourtname--radios.crownregion--radio.crownnw",
+          "_type": "radio",
+          "label": "North-west England",
+          "value": "crownnw"
+        },
+        {
+          "_id": "page.crowncourtname--radios.crownregion--radio.crownse",
+          "_type": "radio",
+          "label": "South-east England",
+          "value": "crownse"
+        },
+        {
+          "_id": "page.crowncourtname--radios.crownregion--radio.crownswwales",
+          "_type": "radio",
+          "label": "South-west England",
+          "value": "crownsw"
+        },
+        {
+          "_id": "page.crowncourtname--radios.crownregion--radio.wales",
+          "_type": "radio",
+          "label": "Wales",
+          "value": "crownwales"
+        }
+      ],
+      "legend": "Where is the court based?",
+      "name": "crownregion"
+    }
+  ],
+  "enableSteps": true,
+  "show": {
+    "identifier": "criminal-court-type",
+    "operator": "is",
+    "value": "crown"
+  },
+  "steps": [
+    "page.london",
+    "page.midlands",
+    "page.north-east",
+    "page.north-west",
+    "page.south-east",
+    "page.south-west",
+    "page.wales"
+  ],
+  "url": "crown"
+}

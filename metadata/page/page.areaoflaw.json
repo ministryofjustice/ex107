@@ -1,0 +1,40 @@
+{
+  "_id": "page.areaoflaw",
+  "_type": "page.singlequestion",
+  "components": [
+    {
+      "_id": "page.areaoflaw--radios",
+      "_type": "radios",
+      "items": [
+        {
+          "_id": "page.areaoflaw--radios--civil",
+          "_type": "radio",
+          "label": "Civil",
+          "value": "civil"
+        },
+        {
+          "_id": "page.areaoflaw--radios--criminal",
+          "_type": "radio",
+          "label": "Criminal",
+          "value": "criminal"
+        },
+        {
+          "_id": "page.areaoflaw--radios--family",
+          "_type": "radio",
+          "label": "Family",
+          "value": "family"
+        },
+        {
+          "_id": "page.areaoflaw--radios--tribunal",
+          "_type": "radio",
+          "hint": "Not all tribunals record hearings - check with the tribunal whether it recorded the hearing you want transcribed",
+          "label": "Tribunal proceedings",
+          "value": "tribunal"
+        }
+      ],
+      "legend": "Select the area of law",
+      "name": "area-of-law"
+    }
+  ],
+  "url": "area-of-law"
+}

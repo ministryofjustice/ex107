@@ -1,0 +1,47 @@
+{
+  "_id": "page.civilcourt",
+  "_type": "page.singlequestion",
+  "components": [
+    {
+      "_id": "page.civilcourt--radios",
+      "_type": "radios",
+      "items": [
+        {
+          "_id": "page.civilcourt--radios--coacivil",
+          "_type": "radio",
+          "label": "Court of Appeal Civil Division",
+          "value": "coacivil"
+        },
+        {
+          "_id": "page.civilcourt--radios--admin",
+          "_type": "radio",
+          "label": "Administrative Court",
+          "value": "admincourt"
+        },
+        {
+          "_id": "page.civilcourt--radios--highcounty",
+          "_type": "radio",
+          "label": "County Court or High Court",
+          "value": "highcounty"
+        }
+      ],
+      "legend": "Select the type of civil court",
+      "name": "civil-court-type",
+      "show": {
+        "identifier": "area-of-law",
+        "operator": "is",
+        "value": "civil"
+      }
+    }
+  ],
+  "enableSteps": true,
+  "steps": [
+    "page.adminwasitregional",
+    "page.adminnotregionalparts",
+    "page.adminrcjparts",
+    "page.adminrcjjudgmentonly",
+    "page.adminrcjnotjudgment",
+    "page.admintbc"
+  ],
+  "url": "civil"
+}

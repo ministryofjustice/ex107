@@ -1,0 +1,13 @@
+{
+  "_id": "page.summingup",
+  "_isa": "page.part",
+  "_type": "page.form",
+  "heading": "Enter details about the judge's summing up",
+  "model": "summingup_details",
+  "show": {
+    "identifier": "sumup",
+    "operator": "is",
+    "value": "yes"
+  },
+  "url": "summing-up"
+}

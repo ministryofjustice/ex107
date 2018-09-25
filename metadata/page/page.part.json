@@ -13,7 +13,7 @@
         }
       },
       "validation": {
-        "required": true
+        "required": false
       }
     },
     {

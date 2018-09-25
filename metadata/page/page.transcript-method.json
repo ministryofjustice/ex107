@@ -26,7 +26,12 @@
         }
       ],
       "legend": "How would you like to get the transcript?",
-      "name": "transcript-method"
+      "name": "transcript-method",
+      "show": {
+        "identifier": "contact-method",
+        "operator": "is",
+        "value": "phone"
+      }
     }
   ],
   "url": "transcript-method"

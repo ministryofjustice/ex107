@@ -5,9 +5,23 @@
   "heading": "Enter details about the judge's summing up",
   "model": "summingup_details",
   "show": {
-    "identifier": "sumup",
-    "operator": "is",
-    "value": "yes"
+    "all": [
+      {
+        "identifier": "wholeorpart",
+        "operator": "is",
+        "value": "partshearing"
+      },
+      {
+        "identifier": "sumup",
+        "operator": "is",
+        "value": "yes"
+      },
+      {
+        "identifier": "area-of-law",
+        "operator": "is",
+        "value": "criminal"
+      }
+    ]
   },
   "url": "summing-up"
 }

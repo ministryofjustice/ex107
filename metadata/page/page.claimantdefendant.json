@@ -1,29 +1,27 @@
 {
   "_id": "page.claimantdefendant",
-  "_type": "page.form",
+  "_type": "page.singlequestion",
   "components": [
     {
       "_id": "page.claimantdefendant--text",
       "_type": "text",
+      "errors": {
+        "required": {
+          "inline": "Enter the claimant's name",
+          "summary": "Enter the claimant's name"
+        }
+      },
+      "hint": "The person who brought the claim to court",
       "label": "Claimant",
       "name": "claimant",
       "repeatable": true,
-      "repeatableHeading": "Enter claimant name"
-    },
-    {
-      "_id": "page.claimantdefendant--text--2",
-      "_type": "text",
-      "label": "Defendant",
-      "name": "defendant",
-      "repeatable": true,
-      "repeatableHeading": "Enter defendant name"
+      "repeatableHeading": "Enter claimant name",
+      "show": {
+        "identifier": "area-of-law",
+        "operator": "is",
+        "value": "civil"
+      }
     }
   ],
-  "heading": "Claimant and defendant names",
-  "show": {
-    "identifier": "area-of-law",
-    "operator": "is",
-    "value": "civil"
-  },
-  "url": "claimant-defendant"
+  "url": "claimant"
 }

@@ -5,6 +5,12 @@
     {
       "_id": "page.south-west--radios.swcrown",
       "_type": "radios",
+      "errors": {
+        "required": {
+          "inline": "Choose the court where the hearing took place",
+          "summary": "Choose the court where the hearing took place"
+        }
+      },
       "items": [
         {
           "_id": "page.south-west--radios.swcrown--radio.bournemouth",
@@ -86,15 +92,29 @@
         }
       ],
       "legend": "Select the Crown Court",
-      "name": "swcrown"
+      "name": "swcrown",
+      "show": {
+        "all": [
+          {
+            "identifier": "area-of-law",
+            "operator": "is",
+            "value": "criminal"
+          },
+          {
+            "identifier": "criminal-court-type",
+            "operator": "is",
+            "value": "crown"
+          },
+          {
+            "identifier": "crownregion",
+            "operator": "is",
+            "value": "crownsw"
+          }
+        ]
+      }
     }
   ],
   "enableSteps": true,
-  "show": {
-    "identifier": "crownregion",
-    "operator": "is",
-    "value": "crownsw"
-  },
   "steps": [
     "page.transcription-agency"
   ],

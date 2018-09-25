@@ -4,44 +4,69 @@
   "body": "**Operational input needed to help identify who will handle the request.**",
   "heading": "TO BE CONFIRMED will transcribe the hearing",
   "show": {
-    "conditionsType": "exactly",
-    "exactly": [
+    "all": [
       {
-        "identifier": "admin-rcj-wholeorpart",
+        "0": {
+          "0": {
+            "identifier": "other",
+            "operator": "defined"
+          }
+        },
+        "identifier": "area-of-law",
         "operator": "is",
-        "value": "admin-rcj-whole"
+        "value": "civil"
       },
       {
-        "all": [
+        "identifier": "civil-court-type",
+        "operator": "is",
+        "value": "admincourt"
+      },
+      {
+        "conditionsType": "exactly",
+        "exactly": [
           {
-            "identifier": "judgment",
-            "operator": "defined"
+            "identifier": "admin-rcj-wholeorpart",
+            "operator": "is",
+            "value": "admin-rcj-whole"
           },
           {
-            "any": [
+            "all": [
               {
-                "identifier": "partA",
+                "identifier": "admin-rcj-wholeorpart",
+                "operator": "is",
+                "value": "admin-rcj-parts"
+              },
+              {
+                "identifier": "admin-judgment",
                 "operator": "defined"
               },
               {
-                "identifier": "partB",
-                "operator": "defined"
-              },
-              {
-                "identifier": "partD",
-                "operator": "defined"
-              },
-              {
-                "identifier": "other",
-                "operator": "defined"
+                "any": [
+                  {
+                    "identifier": "admin-partA",
+                    "operator": "defined"
+                  },
+                  {
+                    "identifier": "admin-partB",
+                    "operator": "defined"
+                  },
+                  {
+                    "identifier": "admin-partC",
+                    "operator": "defined"
+                  },
+                  {
+                    "identifier": "admin-other",
+                    "operator": "defined"
+                  }
+                ],
+                "conditionsType": "any"
               }
-            ],
-            "conditionsType": "any"
+            ]
           }
-        ],
-        "conditionsType": "all"
+        ]
       }
-    ]
+    ],
+    "conditionsType": "all"
   },
   "url": "judgment-plus-other"
 }

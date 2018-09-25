@@ -5,9 +5,23 @@
   "heading": "Enter details about the confiscation ruling",
   "model": "confiscationruling_details",
   "show": {
-    "identifier": "confiscation",
-    "operator": "is",
-    "value": "yes"
+    "all": [
+      {
+        "identifier": "wholeorpart",
+        "operator": "is",
+        "value": "partshearing"
+      },
+      {
+        "identifier": "confiscation",
+        "operator": "is",
+        "value": "yes"
+      },
+      {
+        "identifier": "area-of-law",
+        "operator": "is",
+        "value": "criminal"
+      }
+    ]
   },
   "url": "confiscationruling"
 }

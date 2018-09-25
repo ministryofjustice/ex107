@@ -5,7 +5,7 @@
     {
       "_id": "page.coacrimregyes--content1",
       "_type": "content",
-      "html": "Before filling in the rest of the application, contact the company to check:\r\n\r\n- if they can do the transcript by the time you need it\r\n- how much they charge\r\n\r\nCompany | Contact details\r\n----|----\r\nAuscript | Auscript website\r\nEpiq | Epiq website\r\nMarten Walsh Cherer | Marten Walsh Cherer  website\r\nOpus 2 | Opus 2 website\r\nThe Transcription Agency | The Transcription Agency website\r\nUbiquis | Ubiquis website\r\n\r\n\r\nYou can pay more for them to do the work more quickly. The choices are:\r\n\r\n- overnight (within 24 hours)\r\n- within 48 hours\r\n- within 7 working days\r\n- within 3 working days\r\n- within 12 working days"
+      "html": "Before filling in the rest of the application, contact the company to check:\r\n\r\n- if they can do the transcript by the time you need it\r\n- how much they charge\r\n\r\nCompany | Contact details\r\n----|----\r\nAuscript | [www.auscript.com/en-GB/contact/](https://www.auscript.com/en-GB/contact/)\r\nEpiq | [www.epiqglobal.com/en-gb/contact](https://www.epiqglobal.com/en-gb/contact)\r\nMarten Walsh Cherer | [www.martenwalshcherer.com/contact-us/](https://www.martenwalshcherer.com/contact-us/)\r\nOpus 2 | [www.opus2.com/contact](https://www.opus2.com/contact.html)\r\nThe Transcription Agency | [www.thetranscriptionagency.com](https://www.thetranscriptionagency.com/)\r\nUbiquis | [www.ubiqus.co.uk/about-us/contact-us](https://www.ubiqus.co.uk/about-us/contact-us/)\r\n\r\n\r\nYou can pay more for them to do the work more quickly. The choices are:\r\n\r\n- overnight (within 24 hours)\r\n- within 48 hours\r\n- within 7 working days\r\n- within 3 working days\r\n- within 12 working days"
     },
     {
       "_id": "page.coacrimregyes--warning",
@@ -16,6 +16,12 @@
     {
       "_id": "page.coacrimregyes--radios",
       "_type": "radios",
+      "errors": {
+        "required": {
+          "inline": "Choose a company to do the transcript",
+          "summary": "Choose a company to do the transcript"
+        }
+      },
       "items": [
         {
           "_id": "page.coacrimregyes--radios--auscript",
@@ -60,9 +66,23 @@
   ],
   "heading": "Choose a transcription company",
   "show": {
-    "identifier": "coacrimregional",
-    "operator": "is",
-    "value": "yes"
+    "all": [
+      {
+        "identifier": "area-of-law",
+        "operator": "is",
+        "value": "criminal"
+      },
+      {
+        "identifier": "criminal-court-type",
+        "operator": "is",
+        "value": "crim-coa"
+      },
+      {
+        "identifier": "coacrimregional",
+        "operator": "is",
+        "value": "yes"
+      }
+    ]
   },
   "url": "choose-company"
 }

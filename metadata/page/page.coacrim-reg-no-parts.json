@@ -5,27 +5,33 @@
     {
       "_id": "page.coacrim-reg-no-parts--checkboxes",
       "_type": "checkboxes",
+      "errors": {
+        "required": {
+          "inline": "Choose at least one part of the hearing that you want transcribed",
+          "summary": "Choose at least one part of the hearing that you want transcribed"
+        }
+      },
       "items": [
         {
           "_id": "page.coacrim-reg-no-parts--checkboxes--judgment",
           "_type": "checkbox",
           "label": "Judgment",
-          "name": "judgment",
-          "value": "judgment"
+          "name": "crim-judgment",
+          "value": "yes"
         },
         {
           "_id": "page.coacrim-reg-no-parts--checkboxes--part2",
           "_type": "checkbox",
           "label": "Part 2",
-          "name": "parttwo",
-          "value": "part2"
+          "name": "crim-parttwo",
+          "value": "yes"
         },
         {
           "_id": "page.coacrim-reg-no-parts--checkboxes--part3",
           "_type": "checkbox",
           "label": "Part 3",
-          "name": "partthree",
-          "value": "part3"
+          "name": "crim-partthree",
+          "value": "yes"
         },
         {
           "_id": "page.coacrim-reg-no-parts--checkboxes--other",
@@ -38,8 +44,8 @@
             "show": true
           },
           "label": "Other",
-          "name": "other",
-          "value": "other"
+          "name": "crim-other",
+          "value": "yes"
         }
       ],
       "legend": "Choose as many as you need",

@@ -6,6 +6,12 @@
       "_id": "page.one-day--radios.wholedate",
       "_type": "radios",
       "disabled": false,
+      "errors": {
+        "required": {
+          "inline": "Select whether the hearing took place on one day",
+          "summary": "Select whether the hearing took place on one day"
+        }
+      },
       "items": [
         {
           "_id": "page.one-day--radios.wholedate--radio.yes",
@@ -13,6 +19,12 @@
           "conditionalComponent": {
             "_id": "page.one-day--radios.wholedate--radio.yes--date.wholeonedate",
             "_type": "date",
+            "errors": {
+              "required": {
+                "inline": "Enter the date of the hearing",
+                "summary": "Enter the date of the hearing"
+              }
+            },
             "label": "Date of hearing",
             "name": "wholeonedate"
           },

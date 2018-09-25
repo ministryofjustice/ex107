@@ -9,12 +9,32 @@
         {
           "_id": "page.details--2--fieldset--text.fullname",
           "_type": "text",
+          "errors": {
+            "required": {
+              "inline": "Enter the person's full name",
+              "summary": "Enter the person's full name"
+            }
+          },
           "label": "Full name",
           "name": "fullnamesplitting"
         },
         {
           "_id": "page.details--2--fieldset--number.percentsplitting",
           "_type": "number",
+          "errors": {
+            "maximum": {
+              "inline": "Enter a number less than 100 (without the % sign)",
+              "summary": "Enter a number less than 100 (without the % sign)"
+            },
+            "minimum": {
+              "inline": "Enter a number more than 0 (without the % sign)",
+              "summary": "Enter a number more than 0 (without the % sign)"
+            },
+            "required": {
+              "inline": "Enter the percentage of costs this person is paying",
+              "summary": "Enter the percentage of costs this person is paying"
+            }
+          },
           "hint": "Enter a number only, without % sign",
           "label": "Percentage of costs this person is paying",
           "name": "percentsplitting",
@@ -27,29 +47,56 @@
           "_id": "page.details--2--fieldset--text.phonesplitting",
           "_type": "text",
           "label": "Phone number",
-          "name": "phonesplitting"
+          "name": "phonesplitting",
+          "validation": {
+            "required": false
+          }
         },
         {
           "_id": "page.details--2--fieldset--email.emailsplitting",
           "_type": "email",
+          "errors": {
+            "required": {
+              "inline": "Enter the person's email address",
+              "summary": "Enter the person's email address"
+            }
+          },
           "label": "Email address",
           "name": "emailsplitting"
         },
         {
           "_id": "page.details--2--fieldset--text.buildingsplitting",
           "_type": "text",
+          "errors": {
+            "required": {
+              "inline": "Enter the person's building number or name",
+              "summary": "Enter the person's building number or name"
+            }
+          },
           "label": "Building number or name",
           "name": "buildingsplitting"
         },
         {
           "_id": "page.details--2--fieldset--text.streetsplitting",
           "_type": "text",
+          "errors": {
+            "required": {
+              "inline": "Enter the street name",
+              "summary": "Enter the street name"
+            }
+          },
           "label": "Street",
           "name": "streetsplitting"
         },
         {
           "_id": "page.details--2--fieldset--text.townsplitting",
           "_type": "text",
+          "errors": {
+            "required": {
+              "inline": "Enter the town or city",
+              "summary": "Enter the town or city"
+            }
+          },
           "label": "Town or city",
           "name": "townsplitting"
         },
@@ -67,8 +114,12 @@
           "_type": "text",
           "errors": {
             "pattern": {
-              "inline": "Enter a valid UK postcode",
-              "summary": "Enter a valid UK postcode"
+              "inline": "Enter a UK postcode using uppercase letters and numbers",
+              "summary": "Enter a UK postcode using uppercase letters and numbers"
+            },
+            "required": {
+              "inline": "Enter a UK postcode",
+              "summary": "Enter a UK postcode"
             }
           },
           "label": "Postcode",
@@ -83,5 +134,10 @@
     }
   ],
   "heading": "Enter details of who you’re splitting costs with",
+  "show": {
+    "identifier": "splitting",
+    "operator": "is",
+    "value": "yes"
+  },
   "url": "details"
 }

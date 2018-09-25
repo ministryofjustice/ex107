@@ -9,18 +9,36 @@
         {
           "_id": "page.billing-address--2--fieldset--text.billingbuilding",
           "_type": "text",
+          "errors": {
+            "required": {
+              "inline": "Enter your building number or name",
+              "summary": "Enter your building number or name"
+            }
+          },
           "label": "Building number or name",
           "name": "billingbuilding"
         },
         {
           "_id": "page.billing-address--2--fieldset--text.billingstreet",
           "_type": "text",
+          "errors": {
+            "required": {
+              "inline": "Enter the street name",
+              "summary": "Enter the street name"
+            }
+          },
           "label": "Street",
           "name": "billingstreet"
         },
         {
           "_id": "page.billing-address--2--fieldset--text.billingtown",
           "_type": "text",
+          "errors": {
+            "required": {
+              "inline": "Enter the town or city",
+              "summary": "Enter the town or city"
+            }
+          },
           "label": "Town or city",
           "name": "billingtown"
         },
@@ -38,11 +56,12 @@
           "_type": "text",
           "errors": {
             "pattern": {
-              "inline": "Enter a valid UK postcode",
-              "summary": "Enter a valid UK postcode"
+              "inline": "Enter a UK postcode using uppercase letters and numbers",
+              "summary": "Enter a UK postcode using uppercase letters and numbers"
             },
             "required": {
-              "inline": "Please answer the question"
+              "inline": "Enter a UK postcode",
+              "summary": "Enter a UK postcode"
             }
           },
           "label": "Post code",

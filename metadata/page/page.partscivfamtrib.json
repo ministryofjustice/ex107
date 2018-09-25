@@ -5,6 +5,12 @@
     {
       "_id": "page.partscivfamtrib--checkboxes",
       "_type": "checkboxes",
+      "errors": {
+        "required": {
+          "inline": "Choose at least one part of the hearing that you want transcribed",
+          "summary": "Choose at least one part of the hearing that you want transcribed"
+        }
+      },
       "hint": "Choose as many as you need",
       "items": [
         {
@@ -42,6 +48,12 @@
           "conditionalComponent": {
             "_id": "page.partscivfamtrib--checkboxes--other--text",
             "_type": "text",
+            "errors": {
+              "required": {
+                "inline": "Enter the part of the hearing you want transcribed",
+                "summary": "Enter the part of the hearing you want transcribed"
+              }
+            },
             "label": "Enter the part of the hearing you want transcribed",
             "name": "otherpart",
             "show": {
@@ -52,7 +64,7 @@
             }
           },
           "label": "Other",
-          "name": "otherpart",
+          "name": "otherpartcivfamtrib",
           "value": "yes"
         }
       ],

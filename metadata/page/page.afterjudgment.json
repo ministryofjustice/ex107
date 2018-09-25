@@ -5,9 +5,24 @@
   "heading": "Enter details about the proceedings after judgment",
   "model": "afterjudgment_details",
   "show": {
-    "identifier": "afterjudgment",
-    "operator": "is",
-    "value": "yes"
+    "all": [
+      {
+        "identifier": "wholeorpart",
+        "operator": "is",
+        "value": "partshearing"
+      },
+      {
+        "identifier": "afterjudgment",
+        "operator": "is",
+        "value": "yes"
+      },
+      {
+        "identifier": "area-of-law",
+        "negated": true,
+        "operator": "is",
+        "value": "criminal"
+      }
+    ]
   },
   "url": "after-judgment"
 }

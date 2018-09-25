@@ -6,6 +6,12 @@
       "_id": "page.part--date",
       "_isa": "date.part",
       "_type": "date",
+      "errors": {
+        "required": {
+          "inline": "Enter the date this part of the hearing took place",
+          "summary": "Enter the date this part of the hearing took place"
+        }
+      },
       "validation": {
         "required": true
       }

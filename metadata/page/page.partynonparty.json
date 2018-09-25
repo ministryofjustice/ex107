@@ -5,6 +5,12 @@
     {
       "_id": "page.partynonparty--radios",
       "_type": "radios",
+      "errors": {
+        "required": {
+          "inline": "Select whether you're directly involved in the case",
+          "summary": "Select whether you're directly involved in the case"
+        }
+      },
       "hint": "Answer ‘yes’ if you’re a defendant, respondent, applicant, claimant or legal representative in the case",
       "items": [
         {
@@ -19,6 +25,12 @@
           "conditionalComponent": {
             "_id": "page.partynonparty--radios--no--textarea",
             "_type": "textarea",
+            "errors": {
+              "required": {
+                "inline": "Enter why you want this transcript",
+                "summary": "Enter why you want this transcript"
+              }
+            },
             "label": "Why do you want this transcript?",
             "name": "whywant"
           },

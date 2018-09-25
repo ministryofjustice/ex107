@@ -5,6 +5,12 @@
     {
       "_id": "page.telephonehearing--radios",
       "_type": "radios",
+      "errors": {
+        "required": {
+          "inline": "Select whether the hearing was held over the telephone",
+          "summary": "Select whether the hearing was held over the telephone"
+        }
+      },
       "items": [
         {
           "_id": "page.telephonehearing--radios--yes",

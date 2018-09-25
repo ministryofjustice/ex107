@@ -5,6 +5,12 @@
     {
       "_id": "page.criminalcourt--radios",
       "_type": "radios",
+      "errors": {
+        "required": {
+          "inline": "Choose the type of court",
+          "summary": "Choose the type of court"
+        }
+      },
       "hint": "You cannot get a transcript for a hearing at a magistrates' court",
       "items": [
         {

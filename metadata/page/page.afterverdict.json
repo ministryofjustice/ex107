@@ -5,9 +5,23 @@
   "heading": "Enter details about the proceedings after verdict",
   "model": "afterverdict_details",
   "show": {
-    "identifier": "afterverdict",
-    "operator": "is",
-    "value": "yes"
+    "all": [
+      {
+        "identifier": "wholeorpart",
+        "operator": "is",
+        "value": "partshearing"
+      },
+      {
+        "identifier": "afterverdict",
+        "operator": "is",
+        "value": "yes"
+      },
+      {
+        "identifier": "area-of-law",
+        "operator": "is",
+        "value": "criminal"
+      }
+    ]
   },
   "url": "after-verdict"
 }

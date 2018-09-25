@@ -5,6 +5,12 @@
     {
       "_id": "page.your-details--text.yourname",
       "_type": "text",
+      "errors": {
+        "required": {
+          "inline": "Enter your full name",
+          "summary": "Enter your full name"
+        }
+      },
       "label": "Full name",
       "name": "yourname"
     },
@@ -20,14 +26,29 @@
     {
       "_id": "page.your-details--email.email",
       "_type": "email",
+      "errors": {
+        "required": {
+          "inline": "Enter your email address",
+          "summary": "Enter your email address"
+        }
+      },
       "label": "Email address",
       "name": "email"
     },
     {
       "_id": "page.your-details--text.phone",
       "_type": "text",
+      "errors": {
+        "required": {
+          "inline": "Enter your phone number",
+          "summary": "Enter your phone number"
+        }
+      },
       "label": "Telephone number",
-      "name": "phone"
+      "name": "phone",
+      "validation": {
+        "required": false
+      }
     },
     {
       "_id": "page.your-details--fieldset",
@@ -36,18 +57,36 @@
         {
           "_id": "page.your-details--fieldset--text.address",
           "_type": "text",
+          "errors": {
+            "required": {
+              "inline": "Enter your building number or name",
+              "summary": "Enter your building number or name"
+            }
+          },
           "label": "Building number or name",
           "name": "address"
         },
         {
           "_id": "page.your-details--fieldset--text.addresstwo",
           "_type": "text",
+          "errors": {
+            "required": {
+              "inline": "Enter the street name",
+              "summary": "Enter the street name"
+            }
+          },
           "label": "Street",
           "name": "addresstwo"
         },
         {
           "_id": "page.your-details--fieldset--text.town",
           "_type": "text",
+          "errors": {
+            "required": {
+              "inline": "Enter the town or city",
+              "summary": "Enter the town or city"
+            }
+          },
           "label": "Town or city",
           "name": "town"
         },
@@ -63,6 +102,16 @@
         {
           "_id": "page.your-details--fieldset--text.postcode",
           "_type": "text",
+          "errors": {
+            "pattern": {
+              "inline": "Enter a UK postcode using uppercase letters and numbers",
+              "summary": "Enter a UK postcode using uppercase letters and numbers"
+            },
+            "required": {
+              "inline": "Enter a UK postcode",
+              "summary": "Enter a UK postcode"
+            }
+          },
           "label": "Post code",
           "name": "postcode",
           "validation": {
@@ -75,6 +124,12 @@
     {
       "_id": "page.your-details--radios.alsobilling",
       "_type": "radios",
+      "errors": {
+        "required": {
+          "inline": "Select whether this address is also your billing address",
+          "summary": "Select whether this address is also your billing address"
+        }
+      },
       "items": [
         {
           "_id": "page.your-details--radios.alsobilling--radio.yes",

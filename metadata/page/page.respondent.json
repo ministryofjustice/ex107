@@ -1,0 +1,27 @@
+{
+  "_id": "page.respondent",
+  "_type": "page.singlequestion",
+  "components": [
+    {
+      "_id": "page.respondent--text.respondent",
+      "_type": "text",
+      "errors": {
+        "required": {
+          "inline": "Enter respondent name",
+          "summary": "Enter respondent name"
+        }
+      },
+      "hint": "The person who responded to the claim",
+      "label": "Respondent",
+      "name": "respondent",
+      "repeatable": true,
+      "repeatableHeading": "Enter respondent name",
+      "show": {
+        "identifier": "area-of-law",
+        "operator": "is",
+        "value": "family"
+      }
+    }
+  ],
+  "url": "respondent"
+}

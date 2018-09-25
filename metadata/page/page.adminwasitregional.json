@@ -5,6 +5,13 @@
     {
       "_id": "page.adminwasitregional--radios",
       "_type": "radios",
+      "errors": {
+        "required": {
+          "inline": "Choose whether the Administrative Court hearing took place in a regional court outside London",
+          "summary": "Choose whether the Administrative Court hearing took place in a regional court outside London"
+        }
+      },
+      "hint": "A regional court is a court other than at the Royal Courts of Justice in London",
       "items": [
         {
           "_id": "page.adminwasitregional--radios--yes",
@@ -22,9 +29,18 @@
       "legend": "Was the hearing in a regional court?",
       "name": "adminregional",
       "show": {
-        "identifier": "civil-court-type",
-        "operator": "is",
-        "value": "admincourt"
+        "all": [
+          {
+            "identifier": "area-of-law",
+            "operator": "is",
+            "value": "civil"
+          },
+          {
+            "identifier": "civil-court-type",
+            "operator": "is",
+            "value": "admincourt"
+          }
+        ]
       }
     }
   ],

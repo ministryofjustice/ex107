@@ -5,6 +5,12 @@
     {
       "_id": "page.civilcourt--radios",
       "_type": "radios",
+      "errors": {
+        "required": {
+          "inline": "Choose the type of civil court",
+          "summary": "Choose the type of civil court"
+        }
+      },
       "items": [
         {
           "_id": "page.civilcourt--radios--coacivil",

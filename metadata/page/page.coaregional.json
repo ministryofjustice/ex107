@@ -5,6 +5,12 @@
     {
       "_id": "page.coaregional--radios",
       "_type": "radios",
+      "errors": {
+        "required": {
+          "inline": "Choose whether the Court of Appeal Criminal Division hearing took place at a regional Crown Court",
+          "summary": "Choose whether the Court of Appeal Criminal Division hearing took place at a regional Crown Court"
+        }
+      },
       "hint": "A regional court is a court other than at the Royal Courts of Justice in London",
       "items": [
         {
@@ -23,9 +29,18 @@
       "legend": "Was the hearing in a regional court?",
       "name": "coacrimregional",
       "show": {
-        "identifier": "criminal-court-type",
-        "operator": "is",
-        "value": "crim-coa"
+        "all": [
+          {
+            "identifier": "area-of-law",
+            "operator": "is",
+            "value": "criminal"
+          },
+          {
+            "identifier": "criminal-court-type",
+            "operator": "is",
+            "value": "crim-coa"
+          }
+        ]
       }
     }
   ],

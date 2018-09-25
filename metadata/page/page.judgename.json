@@ -5,6 +5,12 @@
     {
       "_id": "page.judgename--radios",
       "_type": "radios",
+      "errors": {
+        "required": {
+          "inline": "Select whether you know the judge's name",
+          "summary": "Select whether you know the judge's name"
+        }
+      },
       "items": [
         {
           "_id": "page.judgename--radios--yes",
@@ -12,6 +18,12 @@
           "conditionalComponent": {
             "_id": "page.judgename--radios--yes--text",
             "_type": "text",
+            "errors": {
+              "required": {
+                "inline": "Enter the judge's name",
+                "summary": "Enter the judge's name"
+              }
+            },
             "label": "Judge's name",
             "name": "judgename"
           },

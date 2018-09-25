@@ -5,6 +5,12 @@
     {
       "_id": "page.caserefno--radios",
       "_type": "radios",
+      "errors": {
+        "required": {
+          "inline": "Select whether you have a case reference number",
+          "summary": "Select whether you have a case reference number"
+        }
+      },
       "items": [
         {
           "_id": "page.caserefno--radios--yes",
@@ -12,6 +18,12 @@
           "conditionalComponent": {
             "_id": "page.caserefno--radios--yes--text",
             "_type": "text",
+            "errors": {
+              "required": {
+                "inline": "Enter a case reference number",
+                "summary": "Enter a case reference number"
+              }
+            },
             "label": "Case reference number",
             "name": "caserefnumber"
           },
@@ -41,9 +53,10 @@
   "steps": [
     "page.nameofcourt",
     "page.hearingroomnumber",
-    "page.defendant",
     "page.claimantdefendant",
+    "page.defendant",
     "page.claimantrespondent",
+    "page.respondent",
     "page.judgename",
     "page.solicitorbarrister",
     "page.partynonparty",

@@ -5,6 +5,12 @@
     {
       "_id": "page.welsh--radios",
       "_type": "radios",
+      "errors": {
+        "required": {
+          "inline": "Select whether the transcript should be translated from Welsh into English",
+          "summary": "Select whether the transcript should be translated from Welsh into English"
+        }
+      },
       "items": [
         {
           "_id": "page.welsh--radios--yes",

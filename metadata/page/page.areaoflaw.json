@@ -5,6 +5,12 @@
     {
       "_id": "page.areaoflaw--radios",
       "_type": "radios",
+      "errors": {
+        "required": {
+          "inline": "Choose the area of law",
+          "summary": "Choose the area of law"
+        }
+      },
       "items": [
         {
           "_id": "page.areaoflaw--radios--civil",

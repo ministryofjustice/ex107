@@ -1,29 +1,27 @@
 {
   "_id": "page.claimantrespondent",
-  "_type": "page.form",
+  "_type": "page.singlequestion",
   "components": [
     {
       "_id": "page.claimantrespondent--text",
       "_type": "text",
+      "errors": {
+        "required": {
+          "inline": "Enter the applicant's name",
+          "summary": "Enter the applicant's name"
+        }
+      },
+      "hint": "The person who brought the case to court",
       "label": "Applicant",
       "name": "claimant",
       "repeatable": true,
-      "repeatableHeading": "Enter applicant name"
-    },
-    {
-      "_id": "page.claimantrespondent--text--2",
-      "_type": "text",
-      "label": "Respondent",
-      "name": "respondent",
-      "repeatable": true,
-      "repeatableHeading": "Enter respondent name"
+      "repeatableHeading": "Enter applicant name",
+      "show": {
+        "identifier": "area-of-law",
+        "operator": "is",
+        "value": "family"
+      }
     }
   ],
-  "heading": "Applicant and respondent names",
-  "show": {
-    "identifier": "area-of-law",
-    "operator": "is",
-    "value": "family"
-  },
-  "url": "applicant-respondent"
+  "url": "applicant"
 }

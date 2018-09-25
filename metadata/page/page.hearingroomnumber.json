@@ -5,6 +5,12 @@
     {
       "_id": "page.hearingroomnumber--radios",
       "_type": "radios",
+      "errors": {
+        "required": {
+          "inline": "Select whether you know the court or hearing room number",
+          "summary": "Select whether you know the court or hearing room number"
+        }
+      },
       "items": [
         {
           "_id": "page.hearingroomnumber--radios--yes",
@@ -12,6 +18,12 @@
           "conditionalComponent": {
             "_id": "page.hearingroomnumber--radios--yes--text",
             "_type": "text",
+            "errors": {
+              "required": {
+                "inline": "Enter the court or hearing room number",
+                "summary": "Enter the court or hearing room number"
+              }
+            },
             "label": "Court or hearing room number",
             "name": "roomnumber"
           },

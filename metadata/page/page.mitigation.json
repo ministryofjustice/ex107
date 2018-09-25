@@ -5,9 +5,23 @@
   "heading": "Enter details about the mitigation",
   "model": "mitigation_details",
   "show": {
-    "identifier": "mitigation",
-    "operator": "is",
-    "value": "yes"
+    "all": [
+      {
+        "identifier": "wholeorpart",
+        "operator": "is",
+        "value": "partshearing"
+      },
+      {
+        "identifier": "mitigation",
+        "operator": "is",
+        "value": "yes"
+      },
+      {
+        "identifier": "area-of-law",
+        "operator": "is",
+        "value": "criminal"
+      }
+    ]
   },
   "url": "mitigation"
 }

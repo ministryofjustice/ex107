@@ -5,6 +5,12 @@
     {
       "_id": "page.splitting-cost--radios.splitting",
       "_type": "radios",
+      "errors": {
+        "required": {
+          "inline": "Select whether you're splitting the cost with someone else",
+          "summary": "Select whether you're splitting the cost with someone else"
+        }
+      },
       "items": [
         {
           "_id": "page.splitting-cost--radios.splitting--radio.yes",

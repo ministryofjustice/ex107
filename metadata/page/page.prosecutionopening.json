@@ -5,9 +5,23 @@
   "heading": "Enter details about the prosecution's opening of the facts",
   "model": "prosecutionopening_details",
   "show": {
-    "identifier": "prosopen",
-    "operator": "is",
-    "value": "yes"
+    "all": [
+      {
+        "identifier": "wholeorpart",
+        "operator": "is",
+        "value": "partshearing"
+      },
+      {
+        "identifier": "prosopen",
+        "operator": "is",
+        "value": "yes"
+      },
+      {
+        "identifier": "area-of-law",
+        "operator": "is",
+        "value": "criminal"
+      }
+    ]
   },
   "url": "prosecution-opening"
 }

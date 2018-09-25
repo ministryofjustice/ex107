@@ -5,6 +5,12 @@
     {
       "_id": "page.partscrim--checkboxes",
       "_type": "checkboxes",
+      "errors": {
+        "required": {
+          "inline": "Choose at least one part of the hearing that you want transcribed",
+          "summary": "Choose at least one part of the hearing that you want transcribed"
+        }
+      },
       "items": [
         {
           "_id": "page.partscrim--checkboxes--prosopen",
@@ -86,7 +92,7 @@
             "name": "other-details"
           },
           "label": "Other",
-          "name": "other",
+          "name": "othercrim",
           "value": "yes"
         }
       ],

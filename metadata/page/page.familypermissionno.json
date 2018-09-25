@@ -5,6 +5,12 @@
     {
       "_id": "page.familypermissionno--radios",
       "_type": "radios",
+      "errors": {
+        "required": {
+          "inline": "Select whether you have a written court order giving you permission to get a transcript",
+          "summary": "Select whether you have a written court order giving you permission to get a transcript"
+        }
+      },
       "items": [
         {
           "_id": "page.familypermissionno--radios--yes",
@@ -12,8 +18,12 @@
           "conditionalComponent": {
             "_id": "page.familypermissionno--radios--yes--fileupload",
             "_type": "fileupload",
+            "hint": "If you have a copy of the order, attach it here",
             "label": "Attach a copy of the court order",
-            "name": "courtorderupload"
+            "name": "courtorderupload",
+            "validation": {
+              "required": false
+            }
           },
           "label": "Yes",
           "value": "yes"
@@ -24,9 +34,12 @@
           "conditionalComponent": {
             "_id": "page.familypermissionno--radios--no--fileupload",
             "_type": "fileupload",
-            "hint": "Download, fill in and attach [Form C2](https://www.gov.uk/government/publications/form-c2-application-for-permission-to-start-proceedings-for-an-order-or-directions-in-existing-proceedings-to-be-joined-as-or-cease-to-be-a-part) (for family cases) or [Form D11](https://www.gov.uk/government/publications/form-d11-application-notice) (for divorce cases)",
+            "hint": "Download and fill in [Form C2](https://www.gov.uk/government/publications/form-c2-application-for-permission-to-start-proceedings-for-an-order-or-directions-in-existing-proceedings-to-be-joined-as-or-cease-to-be-a-part) (for family cases) or [Form D11](https://www.gov.uk/government/publications/form-d11-application-notice) (for divorce cases) - you can attach it here or send it to the court separately",
             "label": "Attach form asking for permission",
-            "name": "permissionform"
+            "name": "permissionform",
+            "validation": {
+              "required": false
+            }
           },
           "label": "No",
           "value": "no"

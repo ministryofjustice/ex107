@@ -4,38 +4,61 @@
   "body": "**Operational input needed to help identify who will handle the request.**",
   "heading": "???? will transcribe the hearing",
   "show": {
-    "conditionsType": "exactly",
-    "exactly": [
+    "all": [
       {
-        "identifier": "coacrimregionalnowholeorpart",
+        "identifier": "area-of-law",
         "operator": "is",
-        "value": "whole"
+        "value": "criminal"
       },
       {
-        "all": [
+        "identifier": "criminal-court-type",
+        "operator": "is",
+        "value": "crim-coa"
+      },
+      {
+        "identifier": "coacrimregional",
+        "operator": "is",
+        "value": "no"
+      },
+      {
+        "conditionsType": "exactly",
+        "exactly": [
           {
-            "identifier": "judgment",
-            "operator": "defined"
+            "identifier": "coacrimregionalnowholeorpart",
+            "operator": "is",
+            "value": "whole"
           },
           {
-            "any": [
+            "all": [
               {
-                "identifier": "parttwo",
+                "identifier": "coacrimregionalnowholeorpart",
+                "operator": "is",
+                "value": "parts"
+              },
+              {
+                "identifier": "crim-judgment",
                 "operator": "defined"
               },
               {
-                "identifier": "partthree",
-                "operator": "defined"
-              },
-              {
-                "identifier": "other",
-                "operator": "defined"
+                "any": [
+                  {
+                    "identifier": "crim-parttwo",
+                    "operator": "defined"
+                  },
+                  {
+                    "identifier": "crim-partthree",
+                    "operator": "defined"
+                  },
+                  {
+                    "identifier": "crim-other",
+                    "operator": "defined"
+                  }
+                ],
+                "conditionsType": "any"
               }
-            ],
-            "conditionsType": "any"
+            ]
           }
-        ],
-        "conditionsType": "all"
+        ]
       }
     ]
   },

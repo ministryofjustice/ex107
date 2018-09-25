@@ -5,9 +5,24 @@
   "heading": "Enter details about the counsels’ opening or closing submission",
   "model": "opening_details",
   "show": {
-    "identifier": "openclosesubs",
-    "operator": "is",
-    "value": "yes"
+    "all": [
+      {
+        "identifier": "wholeorpart",
+        "operator": "is",
+        "value": "partshearing"
+      },
+      {
+        "identifier": "openclosesubs",
+        "operator": "is",
+        "value": "yes"
+      },
+      {
+        "identifier": "area-of-law",
+        "negated": true,
+        "operator": "is",
+        "value": "criminal"
+      }
+    ]
   },
   "url": "opening"
 }

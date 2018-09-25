@@ -5,6 +5,12 @@
     {
       "_id": "page.adminnotregionalparts--radios",
       "_type": "radios",
+      "errors": {
+        "required": {
+          "inline": "Choose whether you want a transcript of the whole hearing or parts of it",
+          "summary": "Choose whether you want a transcript of the whole hearing or parts of it"
+        }
+      },
       "items": [
         {
           "_id": "page.adminnotregionalparts--radios--whole",
@@ -22,9 +28,23 @@
       "legend": "Select the parts of the hearing you want transcribed",
       "name": "admin-rcj-wholeorpart",
       "show": {
-        "identifier": "adminregional",
-        "operator": "is",
-        "value": "no"
+        "all": [
+          {
+            "identifier": "area-of-law",
+            "operator": "is",
+            "value": "civil"
+          },
+          {
+            "identifier": "civil-court-type",
+            "operator": "is",
+            "value": "admincourt"
+          },
+          {
+            "identifier": "adminregional",
+            "operator": "is",
+            "value": "no"
+          }
+        ]
       }
     }
   ],

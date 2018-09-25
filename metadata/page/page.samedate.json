@@ -1,11 +1,37 @@
 {
   "_id": "page.samedate",
   "_type": "page.form",
-  "body": "You've asked for:\r\n\r\n{openclosesubs, select, yes{- Counsels’ opening or closing submissions} other{}}\r\n{evidence, select, yes{- Evidence} other{}}\r\n{judgment, select, yes{- Judgment} other{}}\r\n{afterjudgment, select, yes{- Proceedings after judgment} other{}}\r\n{prosopen, select, yes{- Prosecution opening of the facts} other{}}\r\n{mitigation, select, yes{- Mitigation} other{}}\r\n{sumup, select, yes{- Judge’s summing up} other{}}\r\n{sentenceremarks, select, yes{- Sentencing remarks} other{}}\r\n{sentencehearing, select, yes{- Sentencing hearing} other{}}\r\n{afterverdict, select, yes{- Proceedings after verdict} other{}}\r\n{openremarks, select, yes{- Opening remarks} other{}}\r\n{otherpart, select, otherpart{- Other} other{}}",
   "components": [
+    {
+      "_id": "page.samedate--content",
+      "_type": "content",
+      "html": "You've asked for:\r\n\r\n{openclosesubs, select, yes{- Counsels opening or closing submissions} other{}}\r\n{evidence, select, yes{- Evidence} other{}}\r\n{judgment, select, yes{- Judgment} other{}}\r\n{afterjudgment, select, yes{- Proceedings after judgment} other{}}\r\n{otherpartcivfamtrib, select, yes{- Other} other{}}",
+      "show": {
+        "identifier": "area-of-law",
+        "negated": true,
+        "operator": "is",
+        "value": "criminal"
+      }
+    },
+    {
+      "_id": "page.samedate--content--2",
+      "_type": "content",
+      "html": "You've asked for:\r\n\r\n{prosopen, select, yes{- Prosecution opening of the facts} other{}}\r\n{mitigation, select, yes{- Mitigation} other{}}\r\n{sumup, select, yes{- Judge’s summing up} other{}}\r\n{sentenceremarks, select, yes{- Sentencing remarks} other{}}\r\n{sentencehearing, select, yes{- Sentencing hearing} other{}}\r\n{afterverdict, select, yes{- Proceedings after verdict} other{}}\r\n{evidence, select, yes{- Evidence} other{}}\r\n{openremarks, select, yes{- Counsels’ opening/closing remarks} other{}}\r\n{arguments, select, yes{- Legal arguments and ruling} other{}}\r\n{confiscation, select, yes{- Confiscation ruling} other{}}\r\n{othercrim, select, yes{- Other} other{}}",
+      "show": {
+        "identifier": "area-of-law",
+        "operator": "is",
+        "value": "criminal"
+      }
+    },
     {
       "_id": "page.samedate--radios",
       "_type": "radios",
+      "errors": {
+        "required": {
+          "inline": "Select whether all parts of the hearing you want transcribed took place on the same date",
+          "summary": "Select whether all parts of the hearing you want transcribed took place on the same date"
+        }
+      },
       "items": [
         {
           "_id": "page.samedate--radios--yes",
@@ -13,6 +39,12 @@
           "conditionalComponent": {
             "_id": "page.samedate--radios--yes--date",
             "_type": "date",
+            "errors": {
+              "required": {
+                "inline": "Enter the date of the hearing",
+                "summary": "Enter the date of the hearing"
+              }
+            },
             "hint": "For example, 31 3 1980",
             "label": "Enter the hearing date",
             "name": "hearingdate"
@@ -35,9 +67,19 @@
       ],
       "labelhide": true,
       "legend": "Were all the parts heard on the same date?",
-      "name": "samedate"
+      "name": "samedate",
+      "show": {
+        "identifier": "wholeorpart",
+        "operator": "is",
+        "value": "partshearing"
+      }
     }
   ],
   "heading": "Were all the parts heard on the same date?",
+  "show": {
+    "identifier": "wholeorpart",
+    "operator": "is",
+    "value": "partshearing"
+  },
   "url": "same-date"
 }

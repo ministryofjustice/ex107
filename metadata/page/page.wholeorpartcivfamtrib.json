@@ -5,6 +5,12 @@
     {
       "_id": "page.wholeorpartcivfamtrib--radios.wholeorpart",
       "_type": "radios",
+      "errors": {
+        "required": {
+          "inline": "Choose whether you want a transcript of the whole hearing or parts of it",
+          "summary": "Choose whether you want a transcript of the whole hearing or parts of it"
+        }
+      },
       "items": [
         {
           "_id": "page.wholeorpartcivfamtrib--radios.wholeorpart--radio.wholehearing",

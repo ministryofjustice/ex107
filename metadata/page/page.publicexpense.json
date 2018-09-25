@@ -5,6 +5,12 @@
     {
       "_id": "page.publicexpense--radios",
       "_type": "radios",
+      "errors": {
+        "required": {
+          "inline": "Select whether the judge ordered that the transcript should be paid for at public expense",
+          "summary": "Select whether the judge ordered that the transcript should be paid for at public expense"
+        }
+      },
       "hint": "This means the court will pay for the transcript",
       "items": [
         {

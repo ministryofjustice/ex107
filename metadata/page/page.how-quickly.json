@@ -6,6 +6,12 @@
     {
       "_id": "page.how-quickly--radios.howquicklycivilfamtrib",
       "_type": "radios",
+      "errors": {
+        "required": {
+          "inline": "Choose how quickly you want the company to do the work",
+          "summary": "Choose how quickly you want the company to do the work"
+        }
+      },
       "items": [
         {
           "_id": "page.how-quickly--radios.howquicklycivilfamtrib--radio.48hours",
@@ -32,6 +38,12 @@
     {
       "_id": "page.how-quickly--radios.timelimitcrim",
       "_type": "radios",
+      "errors": {
+        "required": {
+          "inline": "Choose how quickly you want the company to do the work",
+          "summary": "Choose how quickly you want the company to do the work"
+        }
+      },
       "items": [
         {
           "_id": "page.how-quickly--radios.timelimitcrim--radio.24hours",

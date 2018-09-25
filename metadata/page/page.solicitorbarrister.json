@@ -5,6 +5,12 @@
     {
       "_id": "page.solicitorbarrister--radios",
       "_type": "radios",
+      "errors": {
+        "required": {
+          "inline": "Select whether you know the barristers’ or solicitors’ names",
+          "summary": "Select whether you know the barristers’ or solicitors’ names"
+        }
+      },
       "items": [
         {
           "_id": "page.solicitorbarrister--radios--yes",

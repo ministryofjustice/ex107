@@ -5,34 +5,40 @@
     {
       "_id": "page.adminrcjparts--checkboxes",
       "_type": "checkboxes",
+      "errors": {
+        "required": {
+          "inline": "Choose at least one part of the Administrative Court hearing that you want transcribed",
+          "summary": "Choose at least one part of the Administrative Court hearing that you want transcribed"
+        }
+      },
       "items": [
         {
           "_id": "page.adminrcjparts--checkboxes--partA",
           "_type": "checkbox",
           "label": "Part A",
-          "name": "partA",
-          "value": "partA"
+          "name": "admin-partA",
+          "value": "yes"
         },
         {
           "_id": "page.adminrcjparts--checkboxes--partB",
           "_type": "checkbox",
           "label": "Part B",
-          "name": "partB",
-          "value": "partB"
+          "name": "admin-partB",
+          "value": "yes"
         },
         {
           "_id": "page.adminrcjparts--checkboxes--judgment",
           "_type": "checkbox",
           "label": "Judgment",
-          "name": "judgment",
-          "value": "judgment"
+          "name": "admin-judgment",
+          "value": "yes"
         },
         {
           "_id": "page.adminrcjparts--checkboxes--partD",
           "_type": "checkbox",
           "label": "Part D",
-          "name": "partD",
-          "value": "partD"
+          "name": "admin-partD",
+          "value": "yes"
         },
         {
           "_id": "page.adminrcjparts--checkboxes--other",
@@ -44,15 +50,34 @@
             "name": "other-details"
           },
           "label": "Other",
-          "name": "other",
-          "value": "other"
+          "name": "admin-other",
+          "value": "yes"
         }
       ],
       "legend": "Select as many as you need",
       "show": {
-        "identifier": "admin-rcj-wholeorpart",
-        "operator": "is",
-        "value": "admin-rcj-parts"
+        "all": [
+          {
+            "identifier": "area-of-law",
+            "operator": "is",
+            "value": "civil"
+          },
+          {
+            "identifier": "civil-court-type",
+            "operator": "is",
+            "value": "admincourt"
+          },
+          {
+            "identifier": "adminregional",
+            "operator": "is",
+            "value": "no"
+          },
+          {
+            "identifier": "admin-rcj-wholeorpart",
+            "operator": "is",
+            "value": "admin-rcj-parts"
+          }
+        ]
       }
     }
   ],

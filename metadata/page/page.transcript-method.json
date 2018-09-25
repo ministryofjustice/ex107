@@ -5,6 +5,12 @@
     {
       "_id": "page.transcript-method--radios.transcript-method",
       "_type": "radios",
+      "errors": {
+        "required": {
+          "inline": "Choose how you want the company to send you the transcript",
+          "summary": "Choose how you want the company to send you the transcript"
+        }
+      },
       "items": [
         {
           "_id": "page.transcript-method--radios.transcript-method--radio.email",

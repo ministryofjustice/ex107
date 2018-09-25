@@ -5,9 +5,23 @@
   "heading": "Enter details about the legal arguments and ruling",
   "model": "legalargumentsruling_details",
   "show": {
-    "identifier": "arguments",
-    "operator": "is",
-    "value": "yes"
+    "all": [
+      {
+        "identifier": "wholeorpart",
+        "operator": "is",
+        "value": "partshearing"
+      },
+      {
+        "identifier": "arguments",
+        "operator": "is",
+        "value": "yes"
+      },
+      {
+        "identifier": "area-of-law",
+        "operator": "is",
+        "value": "criminal"
+      }
+    ]
   },
   "url": "legalargumentsruling"
 }

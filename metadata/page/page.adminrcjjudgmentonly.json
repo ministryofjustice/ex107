@@ -19,26 +19,46 @@
   "show": {
     "all": [
       {
-        "identifier": "judgment",
+        "identifier": "area-of-law",
+        "operator": "is",
+        "value": "civil"
+      },
+      {
+        "identifier": "civil-court-type",
+        "operator": "is",
+        "value": "admincourt"
+      },
+      {
+        "identifier": "adminregional",
+        "operator": "is",
+        "value": "no"
+      },
+      {
+        "identifier": "admin-rcj-wholeorpart",
+        "operator": "is",
+        "value": "admin-rcj-parts"
+      },
+      {
+        "identifier": "admin-judgment",
         "operator": "defined"
       },
       {
-        "identifier": "partA",
+        "identifier": "admin-partA",
         "negated": true,
         "operator": "defined"
       },
       {
-        "identifier": "partB",
+        "identifier": "admin-partB",
         "negated": true,
         "operator": "defined"
       },
       {
-        "identifier": "partD",
+        "identifier": "admin-partD",
         "negated": true,
         "operator": "defined"
       },
       {
-        "identifier": "other",
+        "identifier": "admin-other",
         "negated": true,
         "operator": "defined"
       }

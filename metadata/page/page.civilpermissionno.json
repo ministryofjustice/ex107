@@ -5,6 +5,12 @@
     {
       "_id": "page.civilpermissionno--radios",
       "_type": "radios",
+      "errors": {
+        "required": {
+          "inline": "Select whether you have a written court order giving you permission to get a transcript",
+          "summary": "Select whether you have a written court order giving you permission to get a transcript"
+        }
+      },
       "items": [
         {
           "_id": "page.civilpermissionno--radios--yes",
@@ -12,7 +18,11 @@
           "conditionalComponent": {
             "_id": "page.civilpermissionno--radios--yes--fileupload",
             "_type": "fileupload",
-            "label": "Attach a copy of the court order"
+            "hint": "If you have a copy of the order, attach it here",
+            "label": "Attach a copy of the court order",
+            "validation": {
+              "required": false
+            }
           },
           "label": "Yes",
           "value": "yes"
@@ -23,9 +33,12 @@
           "conditionalComponent": {
             "_id": "page.civilpermissionno--radios--no--fileupload",
             "_type": "fileupload",
-            "hint": "Download, fill in and attach [Form N244](https://www.gov.uk/government/publications/form-n244-application-notice)",
+            "hint": "Download and fill in [Form N244](https://www.gov.uk/government/publications/form-n244-application-notice) - you can attach it here or send it to the court separately",
             "label": "Attach form asking for permission",
-            "name": "permissionform"
+            "name": "permissionform",
+            "validation": {
+              "required": false
+            }
           },
           "label": "No",
           "value": "no"

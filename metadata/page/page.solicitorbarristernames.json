@@ -5,6 +5,12 @@
     {
       "_id": "page.solicitorbarristernames--text",
       "_type": "text",
+      "errors": {
+        "required": {
+          "inline": "Enter the barristers’ or solicitors’ names",
+          "summary": "Enter the barristers’ or solicitors’ names"
+        }
+      },
       "label": "Barrister/solicitor",
       "name": "barristersolictorname",
       "repeatable": true,

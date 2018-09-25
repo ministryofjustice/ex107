@@ -5,6 +5,12 @@
     {
       "_id": "page.dates--date.startdate",
       "_type": "date",
+      "errors": {
+        "required": {
+          "inline": "Enter the start date of the hearing",
+          "summary": "Enter the start date of the hearing"
+        }
+      },
       "hint": "For example, 31 3 1980",
       "label": "Start date",
       "name": "startdate"
@@ -12,6 +18,12 @@
     {
       "_id": "page.dates--date.enddate",
       "_type": "date",
+      "errors": {
+        "required": {
+          "inline": "Enter the end date of the hearing",
+          "summary": "Enter the end date of the hearing"
+        }
+      },
       "hint": "For example, 31 3 1980",
       "label": "End date",
       "name": "enddate"

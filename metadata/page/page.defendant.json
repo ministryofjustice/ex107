@@ -5,14 +5,31 @@
     {
       "_id": "page.defendant--text",
       "_type": "text",
+      "errors": {
+        "required": {
+          "inline": "Enter the defendant's name",
+          "summary": "Enter the defendant's name"
+        }
+      },
+      "hint": "The defendant in the case",
       "label": "Defendant",
       "name": "defendant",
       "repeatable": true,
       "repeatableHeading": "Enter defendant name",
       "show": {
-        "identifier": "area-of-law",
-        "operator": "is",
-        "value": "criminal"
+        "conditionsType": "exactly",
+        "exactly": [
+          {
+            "identifier": "area-of-law",
+            "operator": "is",
+            "value": "criminal"
+          },
+          {
+            "identifier": "area-of-law",
+            "operator": "is",
+            "value": "civil"
+          }
+        ]
       }
     }
   ],

@@ -5,6 +5,12 @@
     {
       "_id": "page.contact-method--radios.contact-method",
       "_type": "radios",
+      "errors": {
+        "required": {
+          "inline": "Choose how you want the transcription company to contact you",
+          "summary": "Choose how you want the transcription company to contact you"
+        }
+      },
       "items": [
         {
           "_id": "page.contact-method--radios.contact-method--radio.email",

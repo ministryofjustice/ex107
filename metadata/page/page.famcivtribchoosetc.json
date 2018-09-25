@@ -16,11 +16,17 @@
     {
       "_id": "page.famcivtribchoosetc--content--2",
       "_type": "content",
-      "html": "Company | Contact | Price for 48 hour turnaround, per 72 words | Price for 12 working days' turnaround, per 72 words\r\n----|----|----|----\r\nAuscript | Company website/contact | £1.22 | £0.95\r\nEpiq | Company website/contact | £1.21 | £0.98\r\nMarten Walsh Cherer | Company website/contact | £1.33 | £1.11\r\nOpus 2| Company website/contact | £2.20 | £1.60\r\nThe Transcription Agency | Company website/contact | £1.78 | £1.34\r\nUbiquis | Company website/contact | £1.24 | £0.70"
+      "html": "Company | Contact | Price for 48 hour turnaround, per 72 words | Price for 12 working days' turnaround, per 72 words\r\n----|----|----|----\r\nAuscript | [www.auscript.com/en-GB/contact/](https://www.auscript.com/en-GB/contact/) | £1.22 | £0.95\r\nEpiq | [www.epiqglobal.com/en-gb/contact](https://www.epiqglobal.com/en-gb/contact) | £1.21 | £0.98\r\nMarten Walsh Cherer | [www.martenwalshcherer.com/contact-us/](https://www.martenwalshcherer.com/contact-us/) | £1.33 | £1.11\r\nOpus 2| [www.opus2.com/contact](https://www.opus2.com/contact.html) | £2.20 | £1.60\r\nThe Transcription Agency | [www.thetranscriptionagency.com](https://www.thetranscriptionagency.com/) | £1.78 | £1.34\r\nUbiquis | [www.ubiqus.co.uk/about-us/contact-us](https://www.ubiqus.co.uk/about-us/contact-us/) | £1.24 | £0.70"
     },
     {
       "_id": "page.famcivtribchoosetc--radios",
       "_type": "radios",
+      "errors": {
+        "required": {
+          "inline": "Choose a company to do the transcript",
+          "summary": "Choose a company to do the transcript"
+        }
+      },
       "items": [
         {
           "_id": "page.famcivtribchoosetc--radios--auscript",

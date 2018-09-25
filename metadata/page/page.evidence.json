@@ -5,9 +5,18 @@
   "heading": "Enter details about the evidence",
   "model": "evidence_details",
   "show": {
-    "identifier": "evidence",
-    "operator": "is",
-    "value": "yes"
+    "all": [
+      {
+        "identifier": "wholeorpart",
+        "operator": "is",
+        "value": "partshearing"
+      },
+      {
+        "identifier": "evidence",
+        "operator": "is",
+        "value": "yes"
+      }
+    ]
   },
   "url": "evidence"
 }

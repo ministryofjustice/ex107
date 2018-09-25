@@ -6,12 +6,27 @@
   "show": {
     "all": [
       {
+        "identifier": "area-of-law",
+        "operator": "is",
+        "value": "criminal"
+      },
+      {
+        "identifier": "criminal-court-type",
+        "operator": "is",
+        "value": "crim-coa"
+      },
+      {
+        "identifier": "coacrimregional",
+        "operator": "is",
+        "value": "no"
+      },
+      {
         "identifier": "coacrimregionalnowholeorpart",
         "operator": "is",
         "value": "parts"
       },
       {
-        "identifier": "judgment",
+        "identifier": "crim-judgment",
         "negated": true,
         "operator": "defined"
       }

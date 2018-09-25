@@ -5,6 +5,12 @@
     {
       "_id": "page.purchase-order--radios.purchase-order",
       "_type": "radios",
+      "errors": {
+        "required": {
+          "inline": "Select whether you have a purchase order number",
+          "summary": "Select whether you have a purchase order number"
+        }
+      },
       "items": [
         {
           "_id": "page.purchase-order--radios.purchase-order--radio.yes",

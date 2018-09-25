@@ -5,6 +5,12 @@
     {
       "_id": "page.coacrim-reg-no-whole-yn--radios",
       "_type": "radios",
+      "errors": {
+        "required": {
+          "inline": "Choose whether you want a transcript of the whole hearing or parts of it",
+          "summary": "Choose whether you want a transcript of the whole hearing or parts of it"
+        }
+      },
       "items": [
         {
           "_id": "page.coacrim-reg-no-whole-yn--radios--whole",
@@ -25,15 +31,29 @@
         }
       ],
       "legend": "Select the parts of the hearing you want transcribed",
-      "name": "coacrimregionalnowholeorpart"
+      "name": "coacrimregionalnowholeorpart",
+      "show": {
+        "all": [
+          {
+            "identifier": "area-of-law",
+            "operator": "is",
+            "value": "criminal"
+          },
+          {
+            "identifier": "criminal-court-type",
+            "operator": "is",
+            "value": "crim-coa"
+          },
+          {
+            "identifier": "coacrimregional",
+            "operator": "is",
+            "value": "no"
+          }
+        ]
+      }
     }
   ],
   "enableSteps": true,
-  "show": {
-    "identifier": "coacrimregional",
-    "operator": "is",
-    "value": "no"
-  },
   "steps": [
     "page.coacrim-reg-no-parts",
     "page.coacrim-reg-no-judgmentonly",

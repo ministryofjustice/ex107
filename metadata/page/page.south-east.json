@@ -5,6 +5,12 @@
     {
       "_id": "page.south-east--radios.secrown",
       "_type": "radios",
+      "errors": {
+        "required": {
+          "inline": "Choose the court where the hearing took place",
+          "summary": "Choose the court where the hearing took place"
+        }
+      },
       "items": [
         {
           "_id": "page.south-east--radios.secrown--radio.amersham",
@@ -128,15 +134,29 @@
         }
       ],
       "legend": "Select the Crown Court",
-      "name": "secrown"
+      "name": "secrown",
+      "show": {
+        "all": [
+          {
+            "identifier": "area-of-law",
+            "operator": "is",
+            "value": "criminal"
+          },
+          {
+            "identifier": "criminal-court-type",
+            "operator": "is",
+            "value": "crown"
+          },
+          {
+            "identifier": "crownregion",
+            "operator": "is",
+            "value": "crownse"
+          }
+        ]
+      }
     }
   ],
   "enableSteps": true,
-  "show": {
-    "identifier": "crownregion",
-    "operator": "is",
-    "value": "crownse"
-  },
   "steps": [
     "page.auscript"
   ],

@@ -5,9 +5,28 @@
   "heading": "Enter details about the 'other' part of the hearing",
   "model": "other_details",
   "show": {
-    "identifier": "otherpart",
-    "operator": "is",
-    "value": "yes"
+    "all": [
+      {
+        "identifier": "wholeorpart",
+        "operator": "is",
+        "value": "partshearing"
+      },
+      {
+        "conditionsType": "exactly",
+        "exactly": [
+          {
+            "identifier": "othercrim",
+            "operator": "is",
+            "value": "yes"
+          },
+          {
+            "identifier": "otherpartcivfamtrib",
+            "operator": "is",
+            "value": "yes"
+          }
+        ]
+      }
+    ]
   },
   "url": "other"
 }

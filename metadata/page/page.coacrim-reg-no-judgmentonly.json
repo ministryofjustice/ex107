@@ -23,21 +23,41 @@
   "show": {
     "all": [
       {
-        "identifier": "judgment",
+        "identifier": "area-of-law",
+        "operator": "is",
+        "value": "criminal"
+      },
+      {
+        "identifier": "criminal-court-type",
+        "operator": "is",
+        "value": "crim-coa"
+      },
+      {
+        "identifier": "coacrimregional",
+        "operator": "is",
+        "value": "no"
+      },
+      {
+        "identifier": "coacrimregionalnowholeorpart",
+        "operator": "is",
+        "value": "parts"
+      },
+      {
+        "identifier": "crim-judgment",
         "operator": "defined"
       },
       {
-        "identifier": "parttwo",
+        "identifier": "crim-parttwo",
         "negated": true,
         "operator": "defined"
       },
       {
-        "identifier": "partthree",
+        "identifier": "crim-partthree",
         "negated": true,
         "operator": "defined"
       },
       {
-        "identifier": "other",
+        "identifier": "crim-other",
         "negated": true,
         "operator": "defined"
       }

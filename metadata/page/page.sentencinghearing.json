@@ -5,9 +5,23 @@
   "heading": "Enter details about the sentencing hearing",
   "model": "sentencinghearing_details",
   "show": {
-    "identifier": "sentencehearing",
-    "operator": "is",
-    "value": "yes"
+    "all": [
+      {
+        "identifier": "wholeorpart",
+        "operator": "is",
+        "value": "partshearing"
+      },
+      {
+        "identifier": "sentencehearing",
+        "operator": "is",
+        "value": "yes"
+      },
+      {
+        "identifier": "area-of-law",
+        "operator": "is",
+        "value": "criminal"
+      }
+    ]
   },
   "url": "sentencing-hearing"
 }

@@ -100,24 +100,9 @@
       "show": {
         "all": [
           {
-            "conditionsType": "exactly",
-            "exactly": [
-              {
-                "identifier": "area-of-law",
-                "operator": "is",
-                "value": "criminal"
-              },
-              {
-                "identifier": "area-of-law",
-                "operator": "is",
-                "value": "family"
-              },
-              {
-                "identifier": "area-of-law",
-                "operator": "is",
-                "value": "tribunal"
-              }
-            ]
+            "identifier": "area-of-law",
+            "operator": "is",
+            "value": "criminal"
           },
           {
             "identifier": "wholeorpart",

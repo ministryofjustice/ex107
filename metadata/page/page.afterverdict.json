@@ -3,7 +3,7 @@
   "_isa": "page.part",
   "_type": "page.form",
   "heading": "Enter details about the proceedings after verdict",
-  "model": "afterverdict_details",
+  "namespace": "afterverdict_details",
   "show": {
     "all": [
       {

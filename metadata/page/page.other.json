@@ -3,7 +3,7 @@
   "_isa": "page.part",
   "_type": "page.form",
   "heading": "Enter details about the 'other' part of the hearing",
-  "model": "other_details",
+  "namespace": "other_details",
   "show": {
     "all": [
       {

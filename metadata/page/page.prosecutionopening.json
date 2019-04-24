@@ -3,7 +3,7 @@
   "_isa": "page.part",
   "_type": "page.form",
   "heading": "Enter details about the prosecution's opening of the facts",
-  "model": "prosecutionopening_details",
+  "namespace": "prosecutionopening_details",
   "show": {
     "all": [
       {

@@ -3,7 +3,7 @@
   "_isa": "page.part",
   "_type": "page.form",
   "heading": "Enter details about the counsels’ opening or closing remarks",
-  "model": "counselsremarks_details",
+  "namespace": "counselsremarks_details",
   "show": {
     "all": [
       {

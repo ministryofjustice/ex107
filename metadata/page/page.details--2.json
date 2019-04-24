@@ -130,7 +130,7 @@
         }
       ],
       "legend": "Person",
-      "model": "payer",
+      "namespace": "payer",
       "repeatable": true
     }
   ],
